@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class 1 | Methods 3</title>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya+Sans' rel='stylesheet' type='text/css'>
+        <link href="../css/pig.css" rel="stylesheet" type="text/css" />
+        <link href="../css/base.css" rel="stylesheet" type="text/css" />
+
+        <script src="../js/hammer.min.js"></script>
+        <script src="../js/pig.js"></script>
+    </head>
+    <body>
+
+        <div class="slide">
+            <p>Welcome to Methods 3, Lecture 1</p>
+            <p>This is a web page that can be viewed as slides.</p>
+            <p>→ to move forward</p>
+            <p>← to go back</p>
+        </div>
+
+        <div class="slide">
+            <h1>Methods 3</h1>
+        </div>
+
+        <div class="slide">
+            <h2>maps that I've made</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/garden_maps.png);">
+            <a class="source" href="http://gardenmaps.org/">
+                garden maps
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/llnyc.png);">
+            <a class="source" href="http://596acres.org/">
+                Living Lots NYC (596 Acres)
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/health-atlas.png);">
+            <a class="source" href="https://healthatlas.ucsf.edu/">
+                UCSF Health Atlas
+            </a>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h1>Syllabus</h1>
+        </div>
+
+        <div class="slide">
+            <h1>Objectives</h1>
+        </div>
+
+        <div class="slide">
+            <h1>Objectives</h1>
+            <ul style="list-style: disc;">
+                <li>improve spatial data literacy</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h1>Objectives</h1>
+            <ul style="list-style: disc;">
+                <li>improve spatial data literacy</li>
+                <li>introduce and apply cartographic concepts</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h1>Objectives</h1>
+            <ul style="list-style: disc;">
+                <li>improve spatial data literacy</li>
+                <li>introduce and apply cartographic concepts</li>
+                <li>introduce GIS concepts</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h1>Objectives</h1>
+            <ul style="list-style: disc;">
+                <li>improve spatial data literacy</li>
+                <li>introduce and apply cartographic concepts</li>
+                <li>introduce GIS concepts</li>
+                <li>apply GIS concepts offline and online</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h1>Objectives</h1>
+            <ul style="list-style: disc;">
+                <li>improve spatial data literacy</li>
+                <li>introduce and apply cartographic concepts</li>
+                <li>introduce GIS concepts</li>
+                <li>apply GIS concepts offline and online</li>
+                <li>introduce webmapping</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h1>Timeline</h1>
+            <ul>
+                <li>6 weeks: GIS</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h1>Timeline</h1>
+            <ul>
+                <li>6 weeks: GIS</li>
+                <li>5 weeks: online maps</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h1>Timeline</h1>
+            <ul>
+                <li>6 weeks: GIS</li>
+                <li>5 weeks: online maps</li>
+                <li>4 weeks: final projects</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>Class homepage</h2>
+            <p><a target="_blank" href="https://due-parsons.github.io/methods3-materials-fall2022/">due-parsons.github.io/methods3-materials-fall2022</a></p>
+        </div>
+
+        <div class="slide">
+            <h2>Assignments will be posted in Canvas</h2>
+        </div>
+
+        <div class="slide">
+            <h2>Do assignments on time or you may lose 25% credit.</h2>
+        </div>
+
+        <div class="slide">
+            <h2>Final grade =</h2>
+            <p>20% attendance and participation +</p>
+            <p>30% assignments +</p>
+            <p>50% final project</p>
+        </div>
+
+        <div class="slide">
+            <h2>Email</h2>
+            <p>I prefer Slack</p>
+        </div>
+
+        <div class="slide">
+            <h2>Announcements</h2>
+            <p>Will come through Slack, so please ensure you get email notifications through it</p>
+        </div>
+
+        <div class="slide">
+            <h2>Getting in touch with me</h2>
+            <p>Personal: message or email me directly</p>
+            <p>About an assignment: post a question in Slack</p>
+        </div>
+
+        <div class="slide">
+            <h2>GIS</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/scale.jpg);">
+            <h2>cartography</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/projections.png);">
+            <h2>projections</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/choropleth.jpg);">
+            <h2>choropleths</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geoprocessing.gif);">
+            <h2>geoprocessing</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/heatmaps.png);">
+            <h2>heat maps</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/georectification.gif);">
+            <h2>georectification</h2>
+        </div>
+
+        <div class="slide">
+            <h2>Online maps</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto.png);">
+            <h2>Carto</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm.png);">
+            <h2>OpenStreetMap</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio.png);">
+            <h2>Mapbox</h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide" style="background-image: url(img/luis.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/rethinktheblock1.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/rethinktheblock2.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/rethinktheblock3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/berlin-wall.png);">
+            <a class="source" href="https://team.cartodb.com/u/santiagoa/viz/ed60a122-6f43-11e4-a294-0e4fddd5de28/public_map">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/methods3-fall2015.png);">
+            <a class="source" href="http://due-parsons.github.io/methods3-fall2015/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/methods3-fall2016.png);">
+            <a class="source" href="http://due-parsons.github.io/methods3-fall2016/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/methods3-fall2017.png);">
+            <a class="source" href="http://due-parsons.github.io/methods3-fall2017/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/methods3-fall2018.png);">
+            <a class="source" href="http://due-parsons.github.io/methods3-fall2018/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/methods3-fall2019.png);">
+            <a class="source" href="http://due-parsons.github.io/methods3-fall2019/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/methods3-fall2020.png);">
+            <a class="source" href="http://due-parsons.github.io/methods3-fall2020/">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>today:</h2>
+            <ul style="list-style: disc">
+                <li>What is a map?</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>today:</h2>
+            <ul style="list-style: disc">
+                <li>What is a map?</li>
+                <li>What is GIS?</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>today:</h2>
+            <ul style="list-style: disc">
+                <li>What is a map?</li>
+                <li>What is GIS?</li>
+                <li>What are latitude and longitude?</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>today:</h2>
+            <ul style="list-style: disc">
+                <li>What is a map?</li>
+                <li>What is GIS?</li>
+                <li>What are latitude and longitude?</li>
+                <li>GIS concepts</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>today:</h2>
+            <ul style="list-style: disc">
+                <li>What is a map?</li>
+                <li>What is GIS?</li>
+                <li>What are latitude and longitude?</li>
+                <li>GIS concepts</li>
+                <li>Finding data</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>What is a map?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/to.jpg);">
+            <a class="source" href="http://commons.wikimedia.org/wiki/Category:T_and_O_map">
+                T and O map
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/hereford_mappa_mundi.jpg);">
+            <a class="source" href="http://www.herefordcathedral.org/visit-us/mappa-mundi-1">
+                Mappa Mundi, ca 1300
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/hereford_mappa_mundi_zoom.jpg);">
+            <a class="source" href="http://www.herefordcathedral.org/visit-us/mappa-mundi-1">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tenochtitlan.jpg);">
+            <a class="source" href="http://www.motecuhzoma.de/karten.html">
+                Tenochtitlán, 1524
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/Mercator_1569.png);">
+            <a class="source" href="http://en.wikipedia.org/wiki/Mercator_1569_world_map">
+                Mercator, 1569
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/Mercator_1569_zoom.jpg);">
+            <a class="source" href="http://en.wikipedia.org/wiki/Mercator_1569_world_map">
+                Mercator, 1569
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/Gerardus_Mercator.jpg);">
+            <a class="source" href="http://en.wikipedia.org/wiki/Mercator_1569_world_map">
+                Mercator
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mercator.gif);">
+            <a class="source" href="http://mathworld.wolfram.com/MercatorProjection.html">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/miasma_cholera.jpg);">
+            <a class="source" href="http://nowheremag.com/2013/09/you-are-here-cholera-map/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/snow_large.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/snow_zoom.png);">
+            <a class="source" href="http://www.udel.edu/johnmack/frec682/cholera/cholera2.html">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/snow_death_pump.jpg);">
+            <a class="source" href="http://www.nature.com/nature/journal/v495/n7440/full/495169a.html?WT.ec_id=NATURE-20130314">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/snow_heat_map.jpg);">
+            <a class="source" href="http://www.udel.edu/johnmack/frec682/cholera/cholera2.html">
+                source
+            </a>
+        </div>
+
+        <div class="slide">
+            <h1>GIS</h1>
+        </div>
+
+        <div class="slide">
+            <h1>GIS</h1>
+            <p>
+                "Any system for capturing, storing, checking, and displaying data related to positions on the Earth's surface"
+            </p>
+            <a class="source" href="https://www.nationalgeographic.org/encyclopedia/geographic-information-system-gis/">source</a>
+        </div>
+
+        <div class="slide">
+            <h1>GIS</h1>
+            <p>
+                "In a GIS, you connect <strong>data</strong> with <strong>geography</strong>."
+            </p>
+            <a class="source" href="https://gisgeography.com/what-gis-geographic-information-systems/">gisgeography.com</a>
+        </div>
+
+        <div class="slide">
+            <iframe width="640" height="480" src="https://www.youtube.com/embed/eAFG6aQTwPk" frameborder="0" allowfullscreen></iframe>
+            <p>Data for Decision, 1968</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/esri.gif);">
+            <a class="source" href="http://www.esri.com/">ESRI</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis.png); background-size: 20%;">
+            <a class="source" href="http://qgis.org/">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>a GIS will let you:</h2>
+            <ul style="list-style: disc; padding-left: 50px;">
+                <li>visualize map data</li>
+                <li>create and edit map data</li>
+                <li>overlay map data</li>
+                <li>analyze map data</li>
+            </ul>
+        </div>
+
+        <div class="slide" style="background-image: url(img/streeteasy.jpg);">
+            <a class="source" href="https://streeteasy.com/blog/streeteasy-debuts-latest-ad-campaign/">streeteasy</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/layers.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapping-red-hook-0.png);">
+            <a class="source" href="https://kiran-puri.com/Placemaking">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapping-red-hook-1.png);">
+            <a class="source" href="https://kiran-puri.com/Placemaking">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapping-red-hook-2.png);">
+            <a class="source" href="https://kiran-puri.com/Placemaking">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapping-red-hook-3.png);">
+            <a class="source" href="https://kiran-puri.com/Placemaking">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapping-red-hook-4.png);">
+            <a class="source" href="https://kiran-puri.com/Placemaking">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapping-red-hook-5.png);">
+            <a class="source" href="https://kiran-puri.com/Placemaking">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>the history of cartography in four bullet points:</h2>
+        </div>
+
+        <div class="slide">
+            <p>up to 15th c: maps mostly as diagrams</p>
+        </div>
+
+        <div class="slide">
+            <p>up to 15th c: maps mostly as diagrams</p>
+            <p>15th c: world maps for navigation</p>
+        </div>
+
+        <div class="slide">
+            <p>up to 15th c: maps mostly as diagrams</p>
+            <p>15th c: world maps for navigation</p>
+            <p>19th c: maps combined with data</p>
+        </div>
+
+        <div class="slide">
+            <p>up to 15th c: maps mostly as diagrams</p>
+            <p>15th c: world maps for navigation</p>
+            <p>19th c: maps combined with data</p>
+            <p>mid 20th c: GIS</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/cadastral.jpg);">
+            <a href="https://maps.geshergalicia.org/references/index.html" class="source">Austrian cadastral map</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/grafton_utah_small.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/fitzgerald_recreational_facilities.jpg);">
+            <a class="source" href="http://www.ugapress.org/index.php/books/fitzgerald">Bill Bunge, Recreational Facilities in Fitzgerald, Detroit (1966)</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fitzgerald_recreational_facilities_picture.jpg);">
+            <a class="source" href="http://www.ugapress.org/index.php/books/fitzgerald">Bill Bunge, Fitzgerald</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fitzgerald_recreational_facilities_picture.jpg);">
+            <div style="background: rgba(255, 255, 255, 0.8); font-size: 55px; line-height: 65px; padding: 20px;">
+                "The geographical concept called 'land use' is normally restricted to property mapping. But land is also used directly by humans. What is it that the human child in Fitzgerald actually touches? Is this a suitable surface for human contact, or it just cheap, easy to maintain, easy to drain?"
+            </div>
+            <a class="source" href="http://www.ugapress.org/index.php/books/fitzgerald">Bill Bunge, Fitzgerald</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/everything_sings_newsletter_mentions_small.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/everything_sings_newsletter_mentions_small.jpg);">
+            <a class="source" href="http://sigliopress.com/book/everything-sings/">Everything Sings: households mentioned in the neighborhood newsletter</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/state_of_the_world_apocalypse_small.jpg);">
+            <a class="source" href="http://www.amazon.com/State-World-Atlas-Michael-Kidron/dp/0671424394">The New State of the World Atlas (1987)</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/scp_les.png);">
+            <a class="source" href="http://www.notbored.org/the-scp.html">
+                Surveillance Camera Players
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/isee.png);">
+            <a class="source" href="http://66.93.183.118:8080/isee/s1?zm=0&id=11885">
+                iSee
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/crampton_mapping.jpg);">
+            <a class="source" href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-1405121726.html#">
+                Crampton, Mapping
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/crampton_mapping.jpg);">
+            <div style="background: rgba(255, 255, 255, 0.8); font-size: 55px; line-height: 65px; padding: 20px;">
+                <p>"During the last 50 years or so cartography and GIS have very much aspired to push maps as factual scientific documents. Critical cartography and GIS however conceives of mapping as embedded in specific <em>relations of power</em>."</p>
+            </div>
+            <a class="source" href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-1405121726.html#">
+                Crampton, Mapping
+            </a>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide" style="background-image: url(img/layers.png);"></div>
+
+        <div class="slide" style="background-image: url(img/gis_vector_raster.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/gis_raster.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/gis_vector.jpg);">
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h1>What are latitude and longitude?</h1>
+        </div>
+
+        <div class="slide" style="background-image: url(img/battleship_piece.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/battleship_pegs.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/battleship_board.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/latlng2.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/meridians.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/latlng_coordinates.jpg);">
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>lab</h2>
+            <a href="inclass1.html">in-class exercises, part 1</a>
+        </div>
+
+        <div class="slide">
+            <h2>GIS concepts</h2>
+        </div>
+
+        <div class="slide">
+            <h2>GIS concepts</h2>
+            <ul style="list-style: disc">
+                <li>projects</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>GIS concepts</h2>
+            <ul style="list-style: disc">
+                <li>projects</li>
+                <li>layers</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>GIS concepts</h2>
+            <ul style="list-style: disc">
+                <li>projects</li>
+                <li>layers</li>
+                <li>features</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>GIS concepts</h2>
+            <ul style="list-style: disc">
+                <li>projects</li>
+                <li>layers</li>
+                <li>features</li>
+                <li>attributes</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>GIS concepts</h2>
+            <ul style="list-style: disc">
+                <li>projects</li>
+                <li>layers</li>
+                <li>features</li>
+                <li>attributes</li>
+                <li>values</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>projects</h2>
+        </div>
+
+        <div class="slide">
+            <h2>projects</h2>
+            <p>how you organize your work in a GIS</p>
+        </div>
+
+        <div class="slide">
+            <h2>projects</h2>
+            <p>contain settings and layers</p>
+        </div>
+
+        <div class="slide">
+            <h2>layers</h2>
+        </div>
+
+        <div class="slide">
+            <h2>layers</h2>
+            <p>generally represent one type of thing being mapped</p>
+        </div>
+
+        <div class="slide">
+            <h2>layers</h2>
+            <p>include styles for your data</p>
+        </div>
+
+        <div class="slide">
+            <h2>features</h2>
+        </div>
+
+        <div class="slide">
+            <h2>features</h2>
+            <p>each shape in a layer is a feature</p>
+        </div>
+
+        <div class="slide">
+            <h2>attributes</h2>
+        </div>
+
+        <div class="slide">
+            <h2>attributes</h2>
+            <p>a layer usually has numerous attributes that describe its features</p>
+        </div>
+
+        <div class="slide">
+            <h2>values</h2>
+        </div>
+
+        <div class="slide">
+            <h2>values</h2>
+            <p>a feature has a value for each attribute</p>
+        </div>
+
+        <div class="slide">
+            <h2>spot these in QGIS</h2>
+            <ul style="list-style: disc">
+                <li>projects</li>
+                <li>layers</li>
+                <li>features</li>
+                <li>attributes</li>
+                <li>values</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>QGIS interface</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-interface-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-interface-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-interface-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-interface-3.png);">
+        </div>
+
+        <div class="slide">
+            <h2>finding data</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc-open-data.png);">
+            <a class="source" href="https://data.cityofnewyork.us">data.cityofnewyork.us</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/open-data-parks-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/open-data-parks-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/open-data-parks-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/open-data-parks-3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/open-data-parks-3a.png);">
+            <h2>keep an eye out for <em>metadata</em> or <em>data dictionaries</em></h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/open-data-parks-3b.png);">
+            <a href="https://docs.google.com/spreadsheets/d/1Q4DBWu7riNFxWvy1vnTJHoOI3r2L9oW6eCN56jCNyCw/edit#gid=0" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/open-data-parks-4.png);">
+        </div>
+
+        <div class="slide">
+            <h2>vector spatial data types</h2>
+        </div>
+
+        <div class="slide">
+            <h2>vector spatial data types</h2>
+            <ul style="list-style: disc;">
+                <li>shapefile</li>
+                <li>geojson</li>
+                <li>geopackage</li>
+                <li>KML</li>
+                <li>CSV</li>
+                <li>...and others!</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>if you're unsure, download the file and drag and drop into QGIS</h2>
+        </div>
+
+        <div class="slide">
+            <h2>CSVs are common and handy for point data</h2>
+        </div>
+
+        <div class="slide">
+            <h2>these are simply text files</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/csv.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/csv.png);">
+            <h2><em>c</em>omma <em>s</em>eparated <em>v</em>alues</h2>
+        </div>
+
+        <div class="slide">
+            <h2>if a CSV has <em>latitude</em> and <em>longitude</em> as two separate columns, you will be able to open that in QGIS</h2>
+        </div>
+
+        <div class="slide">
+            <h2>lab</h2>
+            <a href="inclass2.html">in-class exercises, part 2</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/open-data-311-0.png);">
+            <a class="source" href="https://data.cityofnewyork.us">data.cityofnewyork.us</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/open-data-311-1.png);">
+            <a class="source" href="https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9/data">data.cityofnewyork.us</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/open-data-311-2.png);">
+            <a class="source" href="https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9/data">data.cityofnewyork.us</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/open-data-311-3.png);">
+            <a class="source" href="https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9/data">data.cityofnewyork.us</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/open-data-311-4.png);">
+            <a class="source" href="https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9/data">data.cityofnewyork.us</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/open-data-311-5.png);">
+            <a class="source" href="https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9/data">data.cityofnewyork.us</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/open-data-311-6.png);">
+            <a class="source" href="https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9/data">data.cityofnewyork.us</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/bytes.png);">
+            <a class="source" href="https://www1.nyc.gov/site/planning/data-maps/open-data.page">bytes of the big apple</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/data_gov.png);">
+            <a class="source" href="http://data.gov">data.gov</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/data-census-gov.png);">
+            <a class="source" href="https://data.census.gov/cedsci/">data.census.gov</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/world-databank.png);">
+            <a class="source" href="http://databank.worldbank.org">databank.worldbank.org</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/usgs-earthquakes.png);">
+            <a class="source" href="http://earthquake.usgs.gov/earthquakes/search">USGS earthquake data</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/bloomberg-amazon-fires.png);">
+            <a class="source" href="https://www.bloomberg.com/graphics/2019-why-amazon-rainforest-is-on-fire/?utm_campaign=Fair%20Warning&utm_medium=email&utm_source=Revue%20newsletter">Bloomberg</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/bloomberg-amazon-fires.png);">
+            <a class="source" href="https://www.bloomberg.com/graphics/2019-why-amazon-rainforest-is-on-fire/?utm_campaign=Fair%20Warning&utm_medium=email&utm_source=Revue%20newsletter">Bloomberg</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/guardian-amazon-fires.png);">
+            <a class="source" href="https://www.theguardian.com/environment/2019/aug/23/amazon-fires-what-is-happening-anything-we-can-do">The Guardian</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyt-amazon-fires.png);">
+            <a class="source" href="https://www.nytimes.com/interactive/2019/08/24/world/americas/amazon-rain-forest-fire-maps.html">NYT</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyt-amazon-fires-2.png);">
+            <a class="source" href="https://www.nytimes.com/interactive/2019/08/24/world/americas/amazon-rain-forest-fire-maps.html">NYT</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/firms-fire-data.png);">
+            <a class="source" href="https://firms.modaps.eosdis.nasa.gov/active_fire/#firms-shapefile">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>recommended readings</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/crampton_mapping.jpg);">
+            <a class="source" href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-1405121726.html#">
+                Crampton, Mapping
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/monmonier_lie_with_maps.jpg);">
+            <a class="source" href="http://www.markmonmonier.com/how_to_lie_with_maps_14880.htm">
+                Monmonier, How to Lie with Maps
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/bolstad_gis_fundamentals.jpg);">
+            <a class="source" href="http://www.amazon.com/GIS-Fundamentals-Geographic-Information-Systems/dp/0971764735">
+                Bolstad, GIS Fundamentals
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/discover-qgis.png);">
+            <a class="source" href="http://locatepress.com/dq3">
+                Discover QGIS
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qmd2.png);">
+            <a class="source" href="http://locatepress.com/qmd2">
+                QGIS Map Design
+            </a>
+        </div>
+
+        <div class="slide">
+            <h2>homework</h2>
+        </div>
+
+        <div class="slide">
+            <h2>homework</h2>
+            <ul style="list-style: disc">
+                <li>Install QGIS</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>homework</h2>
+            <ul style="list-style: disc">
+                <li>Install QGIS</li>
+                <li>Draw a mental map of NYC</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>homework</h2>
+            <ul style="list-style: disc">
+                <li>Install QGIS</li>
+                <li>Draw a mental map of NYC</li>
+            </ul>
+            <p>Details are in Canvas</p>
+        </div>
+
+    </body>
+</html>
