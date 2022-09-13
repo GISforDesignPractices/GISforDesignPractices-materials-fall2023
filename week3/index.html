@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class 3 | Methods 3</title>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya+Sans' rel='stylesheet' type='text/css'>
+        <link href="../css/pig.css" rel="stylesheet" type="text/css" />
+        <link href="../css/base.css" rel="stylesheet" />
+        <script src="../js/hammer.min.js"></script>
+        <script src="../js/pig.js"></script>
+    </head>
+    <body>
+
+        <div class="slide">
+            <p>Welcome to Methods 3, Lecture 3</p>
+            <p>This is a web page that can be viewed as slides.</p>
+            <p>→ to move forward</p>
+            <p>← to go back</p>
+            <p>g to view as grid</p>
+        </div>
+
+        <div class="slide">
+            <h1>Methods 3</h1>
+        </div>
+
+        <div class="slide" style="background-image: url(img/assignment-molly.png);"></div>
+
+        <div class="slide" style="background-image: url(img/assignment-ella.png);"></div>
+
+        <div class="slide" style="background-image: url(img/final-projects-canvas.png);">
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide" style="background-image: url(img/purple-air.png);">
+            <a href="https://www.purpleair.com/map?opt=1/mAQI/a10/cC0#4.11/40.94/-99.54" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/airnow.png);">
+            <a href="https://fire.airnow.gov/?lat=37.80508000000003&lng=-122.27306999999996&zoom=12" class="source">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>managing files</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/clutter.jpg);">
+            <a class="source" href="http://nymag.com/selectall/2017/07/the-hoarders-who-never-clean-their-nightmare-desktops.html">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>make a folder for each thing you work on</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/file-mgmt-0.png); background-size: 75%;">
+        </div>
+
+        <div class="slide" style="background-image: url(img/file-mgmt-1.png); background-size: 75%">
+        </div>
+
+        <div class="slide">
+            <h2>come up with a per-project organization scheme</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/file-mgmt-2.png); background-size: 75%">
+        </div>
+
+        <div class="slide" style="background-image: url(img/file-mgmt-2a.png); background-size: 75%">
+        </div>
+
+        <div class="slide" style="background-image: url(img/file-mgmt-2b.png); background-size: 75%">
+        </div>
+
+        <div class="slide" style="background-image: url(img/file-mgmt-2c.png); background-size: 75%">
+        </div>
+
+        <div class="slide" style="background-image: url(img/file-mgmt-2d.png); background-size: 75%">
+        </div>
+
+        <div class="slide" style="background-image: url(img/file-mgmt-2e.png); background-size: 75%">
+        </div>
+
+        <div class="slide">
+            <h2>keep your data together</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/file-mgmt-3.png); background-size: 75%">
+        </div>
+
+        <div class="slide">
+            <h2>and name the files appropriately</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/file-mgmt-4.png); background-size: 50%">
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>vector data formats</h2>
+        </div>
+
+        <div class="slide">
+            <h2>QGIS automatically reads many vector formats:</h2>
+        </div>
+
+        <div class="slide">
+            <h2>QGIS automatically reads many vector formats:</h2>
+            <ul style="list-style: disc;">
+                <li>shapefiles (.shp)</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>QGIS automatically reads many vector formats:</h2>
+            <ul style="list-style: disc;">
+                <li>shapefiles (.shp)</li>
+                <li>GeoJSONs (.geojson)</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>QGIS automatically reads many vector formats:</h2>
+            <ul style="list-style: disc;">
+                <li>shapefiles (.shp)</li>
+                <li>GeoJSONs (.geojson)</li>
+                <li>KML (.kml / .kmz)</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>QGIS automatically reads many vector formats:</h2>
+            <ul style="list-style: disc;">
+                <li>shapefiles (.shp)</li>
+                <li>GeoJSONs (.geojson)</li>
+                <li>KML (.kml / .kmz)</li>
+                <li>OSM (.osm)</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>CSVs are handy for point data</h2>
+        </div>
+
+        <div class="slide">
+            <h2>these are simply text files</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/csv.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/csv.png);">
+            <h2><em>c</em>omma <em>s</em>eparated <em>v</em>alues</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-csv-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-csv-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-csv-2.png);">
+        </div>
+
+        <div class="slide">
+            <h2>QGIS doesn't know what the projection of a CSV is in, so you need to help it out</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-csv-2.png);">
+            <h2>EPSG:4326</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-csv-2.png);">
+            <h2>EPSG:4326 is essentially latitude and longitude</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-csv-2.png);">
+            <h2>if your data is in latitude and longitude, use EPSG:4326</h2>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass-csv.html" target="_blank">in-class exercise</a></h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h1>thematic maps</h1>
+        </div>
+
+        <div class="slide">
+            <h1>thematic maps focus on a theme or subject</h1>
+        </div>
+
+        <div class="slide" style="background-image: url(img/state_atlas_exploitation.jpg);">
+        </div>
+
+        <div class="slide">
+            <h1>vs reference maps</h1>
+        </div>
+
+        <div class="slide" style="background-image: url(img/reference_map_oregon.jpg);">
+            <a href="https://www.lib.utexas.edu/maps/oregon.html" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/google-maps.png);">
+        </div>
+
+        <div class="slide">
+            <h1>qualitative vs quantitative</h1>
+        </div>
+
+        <div class="slide">
+            <h1>in maps:</h1>
+        </div>
+
+        <div class="slide">
+            <h1>in maps:</h1>
+            <h1>qualitative &rarr; categories</h1>
+        </div>
+
+        <div class="slide">
+            <h1>in maps:</h1>
+            <h1>qualitative &rarr; categories</h1>
+            <h1>quantitative &rarr; numbers</h1>
+        </div>
+
+        <div class="slide">
+            <h1>qualitative thematic maps categorize features' attributes</h1>
+        </div>
+
+        <div class="slide" style="background-image: url(img/wood_fences.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/wood_fences_legend.jpg);">
+        </div>
+
+        <!-- <div class="slide" style="background-image: url(img/land_cover.jpg);">
+        </div> -->
+
+        <div class="slide" style="background-image: url(img/qgis-categorized.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-categorized-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-categorized-1.png);">
+            <h2>column to categorize on</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-categorized-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-categorized-2.png);">
+            <h2>change all categories' styles</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-categorized-5.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-categorized-5.png);">
+            <h2>double-click to change one category's style</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-categorized-3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-categorized-3.png);">
+            <h2>turn category on or off</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-categorized-4.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-categorized-4.png);">
+            <h2>double-click to change how the category appears in the legend</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-categorized-map.png);">
+        </div>
+
+
+        <div class="slide">
+            <h2><a href="inclass-categorized.html" target="_blank">in-class exercise</a></h2>
+        </div>
+
+        <div class="slide">
+            <h1>quantitative thematic maps use features' numeric attributes</h1>
+        </div>
+
+        <div class="slide">
+            <h1>quantitative thematic maps</h1>
+            <p>aka choropleth maps</p>
+        </div>
+
+        <div class="slide">
+            <h1>choropleth</h1>
+            <p><strong>choro</strong>: region</p>
+            <p><strong>pleth</strong>: multitude</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/bachelors_degree.jpg);">
+            <a class="source" href="http://rkpjrhist615.wordpress.com/page/6/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/smoking_rates.png);">
+            <a class="source" href="http://www.nytimes.com/interactive/2014/03/25/us/smoking-rate-map.html?_r=0">
+                source
+            </a>
+        </div>
+
+        <div class="slide">
+            <h2>how do you make a choropleth?</h2>
+        </div>
+
+        <div class="slide">
+            <h2>not that differently from a categorized map!</h2>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass-simple-choropleth.html" target="_blank">in-class exercise</a></h2>
+        </div>
+
+        <div class="slide">
+            <h1>how do you decide which regions are given which styles?</h1>
+        </div>
+
+        <div class="slide">
+            <h1>you group your data into bins</h1>
+        </div>
+
+        <div class="slide" style="background-image: url(img/gis_fundamentals.png);"></div>
+
+        <div class="slide" style="background-image: url(img/fig9-15.gif);"></div>
+
+        <div class="slide" style="background-image: url(img/fig9-16.gif);"></div>
+
+        <div class="slide" style="background-image: url(img/fig9-17.gif);"></div>
+
+        <div class="slide" style="background-image: url(img/fig9-18.gif);"></div>
+
+        <div class="slide" style="background-image: url(img/incarcerated_population.jpg);">
+            <a class="source" href="http://personal.frostburg.edu/ingarvie0/Maps.htm">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/choropleth_multiethnic.jpg);">
+            <a class="source" href="http://uxblog.idvsolutions.com/2011/10/telling-truth.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/choropleth_multiethnic_histogram.jpg);">
+            <a class="source" href="http://uxblog.idvsolutions.com/2011/10/telling-truth.html">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>the Modifiable Areal Unit Problem</h2>
+        </div>
+
+        <div class="slide">
+            <h2>the Modifiable Areal Unit Problem</h2>
+            <p>the shapes you use can influence the way your data looks without changing the data</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/maup_rate_numbers.png);">
+        </div>
+
+        <!-- <div class="slide" style="background-image: url(img/cdc_ebola.jpg);">
+            <a class="source" href="http://www.cdc.gov/vhf/ebola/resources/distribution-map-guinea-outbreak.html">source</a>
+        </div> -->
+
+        <div class="slide" style="background-image: url(img/gerrymander.png);">
+            <a class="source" href="https://en.wikipedia.org/wiki/Gerrymandering">
+                the gerrymander
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/gerrymandered-md.png);">
+            <a class="source" href="https://www.washingtonpost.com/news/wonk/wp/2014/05/15/americas-most-gerrymandered-congressional-districts/?utm_term=.0c66cd61b698">MD's 3rd district</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/gerrymander_ga_ss16_2001.png);">
+            <a class="source" href="https://www.fairdistrictsga.org">GA's 16th State Senate district, 2001</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/sara_portfolio_lawrenceville.png);">
+            <a class="source" href="https://www.fairdistrictsga.org/split-cities">Fair Districts GA</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/gerrymander_ga_20years.png);">
+            <a class="source" href="https://www.fairdistrictsga.org">GA State House, 20 years of gerrymandering</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/2016-clinton-would-have-won.png);">
+            <a class="source" href="https://medium.com/@khayeswilson/clinton-would-have-won-if-the-united-states-looked-like-this-7b9c844b76a9">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/2016-election-states.png);">
+            <a class="source" href="http://www-personal.umich.edu/~mejn/election/2016/">2016 presidential election results</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/2016-election-counties.png);">
+            <a class="source" href="http://www-personal.umich.edu/~mejn/election/2016/">2016 presidential election results</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/2016-election-counties-gradient.png);">
+            <a class="source" href="http://www-personal.umich.edu/~mejn/election/2016/">2016 presidential election results</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/2016-election-counties-cartogram.png);">
+            <a class="source" href="http://www-personal.umich.edu/~mejn/election/2016/">2016 presidential election results</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/2016-election-counties-population-alpha.jpg);">
+            <a class="source" href="http://geoawesomeness.com/top-23-maps-charts-explain-results-2016-us-presidential-elections/">2016 presidential election results</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/2012-election-counties-circles.png);">
+            <a class="source" href="https://www.nytimes.com/interactive/2016/11/01/upshot/many-ways-to-map-election-results.html">2012 presidential election results</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-search.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-search-points-in.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/count-points-in-polygon.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/join-count.png);">
+        </div>
+
+        <div class="slide">
+            <h2>sometimes it will help to <em>export</em> a file to a shapefile before doing calculations</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/save-as.png);"></div>
+
+        <div class="slide" style="background-image: url(img/qgis-projections-layer.png);"></div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2><a href="inclass-choropleth.html" target="_blank">in-class exercise</a></h2>
+        </div>
+
+        <div class="slide">
+            <h2>start thinking about <em>methodology</em></h2>
+        </div>
+
+        <div class="slide">
+            <h2>keep a document of steps that you are taking, especially if you change or create data</h2>
+        </div>
+
+        <div class="slide">
+            <h2>your future self will thank you</h2>
+        </div>
+
+    </body>
+</html>
