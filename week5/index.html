@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class 5 | Methods 3</title>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya+Sans' rel='stylesheet' type='text/css'>
+
+        <link href="../css/pig.css" rel="stylesheet" type="text/css" />
+        <link href="../css/base.css" rel="stylesheet" />
+
+        <script src="../js/hammer.min.js"></script>
+        <script src="../js/pig.js"></script>
+    </head>
+    <body>
+
+        <div class="slide">
+            <p>Welcome to Methods 3, Lecture 5</p>
+            <p>This is a web page that can be viewed as slides.</p>
+            <p>→ to move forward</p>
+            <p>← to go back</p>
+            <p>g to to enter grid view</p>
+        </div>
+
+        <div class="slide">
+            <h1>Methods 3</h1>
+        </div>
+
+        <div class="slide">
+            <h2>(review)</h2>
+        </div>
+
+        <div class="slide">
+            <h2>the Modifiable Areal Unit Problem</h2>
+            <p>the shapes you use can influence the way your data looks without changing the data</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/maup_rate_numbers.png);">
+        </div>
+
+        <!-- <div class="slide" style="background-image: url(img/cdc_ebola.jpg);">
+            <a class="source" href="http://www.cdc.gov/vhf/ebola/resources/distribution-map-guinea-outbreak.html">source</a>
+        </div> -->
+
+        <div class="slide" style="background-image: url(img/flint-zip-codes-misaligned.jpg);">
+            <a class="source" href="https://theconversation.com/how-zip-codes-nearly-masked-the-lead-problem-in-flint-65626">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/flint-zip-codes-misaligned.jpg);">
+            <h2>the modifiable areal unit problem</h2>
+            <a class="source" href="https://theconversation.com/how-zip-codes-nearly-masked-the-lead-problem-in-flint-65626">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/flint-zip-codes-misaligned.jpg);">
+            <p style="background-color: rgba(255, 255, 255, 0.7);">"One-third of all homes with a Flint ZIP code lie outside the city. Thus, the state’s numbers for Flint were watered down by an additional 50 percent of addresses that weren’t in the city and weren’t using Flint water."</p>
+            <a class="source" href="https://theconversation.com/how-zip-codes-nearly-masked-the-lead-problem-in-flint-65626">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/collisions-not-normalized.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/collisions-not-normalized.png);">
+            <h2>you should almost never make choropleths with just counts</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/collisions-normalize.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/collisions-normalize.png);">
+            <h2>think about ways to <em>normalize</em> your data</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/collisions-normalize.png);">
+            <h2>this makes the data comparable across regions</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/normalize-gistbook.png); background-size: 75%;">
+            <a class="source" href="https://gistbok.ucgis.org/bok-topics/statistical-mapping-enumeration-normalization-classification">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/collisions-normalized.png);">
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>duplicating layers</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/duplicate-layer.png);"></div>
+
+        <div class="slide">
+            <h2>you can copy and paste styles</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/copy-style-1.png);"></div>
+
+        <div class="slide" style="background-image: url(img/copy-style-2.png);"></div>
+
+        <div class="slide" style="background-image: url(img/copy-style-3.png);"></div>
+
+        <div class="slide" style="background-image: url(img/copy-style-4.png);"></div>
+
+        <div class="slide">
+            <h2>you can save a layer with its style</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/save-as-layer-definition.png);"></div>
+
+        <!-- <div class="slide">
+            <h2>insets</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/inset.png);"></div> -->
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>selecting features</h2>
+        </div>
+
+        <div class="slide">
+            <h2>QGIS has a few way to select features</h2>
+        </div>
+
+        <div class="slide">
+            <h2>QGIS has a few way to select features</h2>
+            <ul style="list-style: disc; padding-left: 50px;">
+                <li>by hand</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>QGIS has a few way to select features</h2>
+            <ul style="list-style: disc; padding-left: 50px;">
+                <li>by hand</li>
+                <li>by location</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>QGIS has a few way to select features</h2>
+            <ul style="list-style: disc; padding-left: 50px;">
+                <li>by hand</li>
+                <li>by location</li>
+                <li>by expression</li>
+            </ul>
+        </div>
+
+        <div class="slide" style="background-image: url(img/selection-tools.png); background-size: 20%;">
+        </div>
+
+        <div class="slide" style="background-image: url(img/selection-tools.png); background-size: 20%;">
+            <h2>by hand (selection tools)</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/selection-draw.png); background-size: 40%;">
+        </div>
+
+        <div class="slide">
+            <h2>select by location</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/select-by-location-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/select-by-location-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/select-by-location-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/select-by-location-3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/selection-expression.png); background-size: 40%;">
+        </div>
+
+        <div class="slide" style="background-image: url(img/select-by-expression.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/select-by-expression.png);">
+            <h2>write an expression on the left</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/select-by-expression-field.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/select-by-expression-field.png);">
+            <h2>field name in quotes</h2>
+            <pre style="background-color: rgba(255, 255, 255, 0.8);"><code>"availableB"</code></pre>
+        </div>
+
+        <div class="slide" style="background-image: url(img/select-by-expression-field.png);">
+            <h2>use typical comparison operators with numbers</h2>
+            <pre style="background-color: rgba(255, 255, 255, 0.8);"><code>"availableB" &lt; 10</code></pre>
+        </div>
+
+        <div class="slide" style="background-image: url(img/expression-operators.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/select-by-expression-field.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/select-by-expression-field-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/select-by-expression-field-2.png);">
+            <h2>when comparing text, always put the text in single quotes</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/select-by-expression-field-2.png);">
+            <h2>when comparing text, always put the text in single quotes</h2>
+            <pre style="background-color: rgba(255, 255, 255, 0.8);"><code>"stationNam" = 'Willoughby Ave &amp; Hall St'</code></pre>
+        </div>
+
+        <div class="slide" style="background-image: url(img/expressions-ilike.png);">
+        </div>
+
+        <div class="slide">
+            <h2>selecting data and exporting as a new shapefile is one way to isolate data</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/export-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/export-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/export-1.png);">
+            <h2>keep your file names descriptive</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/export-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/export-2.png);">
+            <h2><em>always</em> click this button to select a destination</h2>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass-select-by-location.html" target="_blank">in-class exercise</a></h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>a GIS will let you:</h2>
+            <ul style="list-style: disc; padding-left: 50px;">
+                <li>visualize map data</li>
+                <li>create and edit map data</li>
+                <li>overlay map data</li>
+                <li>analyze map data</li>
+            </ul>
+        </div>
+
+        <!-- <div class="slide" style="background-image: url(img/project-manon-0.png);">
+            <a class="source" href="https://due-parsons.github.io/methods3-fall2018/projects/mapping-gentrification-risk-in-the-grand-paris/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/project-manon-1.png);">
+            <a class="source" href="https://due-parsons.github.io/methods3-fall2018/projects/mapping-gentrification-risk-in-the-grand-paris/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/project-manon-2.png);">
+            <a class="source" href="https://due-parsons.github.io/methods3-fall2018/projects/mapping-gentrification-risk-in-the-grand-paris/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/project-manon-3.png);">
+            <a class="source" href="https://due-parsons.github.io/methods3-fall2018/projects/mapping-gentrification-risk-in-the-grand-paris/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/project-manon-4.png);">
+            <a class="source" href="https://due-parsons.github.io/methods3-fall2018/projects/mapping-gentrification-risk-in-the-grand-paris/">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>we'll talk more about modeling next time</h2>
+        </div> -->
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>Geoprocessing</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-geoprocessing.png);">
+        </div>
+
+        <div class="slide">
+            <h2>buffers</h2>
+        </div>
+
+        <div class="slide">
+            <h2>buffers</h2>
+            <p>make a "buffer" around features</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fig9-26.gif);">
+            <a class="source" href="http://www.paulbolstad.net/gisbook.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-buffer.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/fig9-31.gif);">
+            <a class="source" href="http://www.paulbolstad.net/gisbook.html">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>well, why?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/latimes-homeless-buffer.png);">
+            <a class="source" href="https://www.latimes.com/projects/homeless-sleeping-maps/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/latimes-homeless-buffer-2.png);">
+            <a class="source" href="https://www.latimes.com/projects/homeless-sleeping-maps/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/walk-to-a-park-area.png);">
+            <a class="source" href="https://data.cityofnewyork.us/Recreation/Walk-to-a-Park-Service-area/5vb5-y6cv">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>you can make negative buffers</h2>
+        </div>
+
+        <div class="slide">
+            <h2>clipping</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/clip-0.png);"></div>
+
+        <div class="slide" style="background-image: url(img/clip-1.png);"></div>
+
+        <div class="slide" style="background-image: url(img/clip-2.png);"></div>
+
+        <div class="slide">
+            <h2>overlay operations</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/set_operations.gif);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/fig9-32.png);">
+            <a class="source" href="http://www.paulbolstad.net/gisbook.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fig9-35.png);">
+            <a class="source" href="http://www.paulbolstad.net/gisbook.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/intersect.gif);">
+            <h2>Intersect</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/union.png);">
+            <h2>Union</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fig9-43.png);">
+            <a class="source" href="http://www.paulbolstad.net/gisbook.html">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>usually you'll use geoprocessing functions in a chain</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fig9-1.png);">
+            <a class="source" href="http://www.paulbolstad.net/gisbook.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fig9-1.png);">
+            <h2>keep track of these as you work!</h2>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass-geoprocessing.html" target="_blank">in-class exercise</a></h2>
+        </div>
+
+        <div class="slide">
+            <h2>Creating data</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/surveyors.png);">
+            <a class="source" href="http://www.aocweb.org/surveyors/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/trigonometry.jpg);">
+            <a class="source" href="http://www.mathamazement.com/Lessons/Pre-Calculus/04_Trigonometric-Functions/applications-of-trigonometric-functions.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/triangulation.jpg);">
+            <a class="source" href="http://www.icsm.gov.au/mapping/surveying2.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/trigonometrical_survey_of_india.jpg);">
+            <a class="source" href="https://commons.wikimedia.org/wiki/File:1922_Index_of_Great_Trigonometrical_Survey_of_India.jpg">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/trigonometrical_survey_of_india_zoom.jpg);">
+            <a class="source" href="https://commons.wikimedia.org/wiki/File:1922_Index_of_Great_Trigonometrical_Survey_of_India.jpg">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/everest.jpg);">
+            <a class="source" href="https://alpinedrome.wordpress.com/tag/himalaya/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/digitizing.jpg);">
+            <a class="source" href="http://www.geo.hunter.cuny.edu/aierulli/gis2/lectures/Lecture4/lecture4.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/digitizer.jpg);">
+            <a class="source" href="http://www.geo.hunter.cuny.edu/aierulli/gis2/lectures/Lecture4/lecture4.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/gps_recievers.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/gps_satellites_reading.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-id.gif);">
+            <a class="source" href="https://www.mapbox.com/blog/id-for-openstreetmap-reaches-beta-1/">via mapbox</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-new-layer.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-edit-toolbar.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-install-qms-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-install-qms-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-install-qms-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-install-qms-3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-install-qms-4.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-install-qms-5.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/georectified_manhattan.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/georectified_manhattan_transparent.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/georectified_manhattan_zoom.png);">
+        </div>
+
+        <div class="slide">
+            <h2>Georeferencing</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/holc-scan.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapping-inequality.png);">
+            <a href="https://dsl.richmond.edu/panorama/redlining/#loc=10/41.926/-87.672&city=chicago-il" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapping-inequality-hover.png);">
+            <a href="https://dsl.richmond.edu/panorama/redlining/#loc=10/41.9437/-87.7045&opacity=0.8&city=chicago-il" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapping-inequality-download.png);">
+            <a href="https://dsl.richmond.edu/panorama/redlining/#loc=11/41.925/-87.731&city=chicago-il&text=downloads" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapping-inequality-national.png);">
+            <a href="https://dsl.richmond.edu/panorama/redlining/#loc=5/37.8/-97.9" class="source">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>Georeferencing takes an image and gives it map coordinates</h2>
+        </div>
+
+        <div class="slide">
+            <h2>the image could be a map, picture, or anything else you might want to overlay on a map</h2>
+        </div>
+
+        <div class="slide">
+            <h2>try to remember the difference between <em>geocoding</em> and <em>georeferencing</em></h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nypl_map_warper.png);">
+            <a class="source" href="http://maps.nypl.org/warper/">maps.nypl.org/warper</a>
+        </div>
+
+        <!-- <div class="slide" style="background-image: url(img/nypl-building-inspector.png);">
+            <a class="source" href="http://buildinginspector.nypl.org/">NYPL Building Inspector</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nypl-building-inspector.gif);">
+            <a class="source" href="http://buildinginspector.nypl.org/">NYPL Building Inspector</a>
+        </div> -->
+
+        <div class="slide" style="background-image: url(img/usgs-topoview.png);">
+            <a class="source" href="https://ngmdb.usgs.gov/topoview/viewer/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/public_lab_archive.png);">
+            <a class="source" href="http://publiclab.org/archive">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/public-lab-kite.jpg);">
+            <a class="source" href="http://publiclab.org/wiki/gulf-coast">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/public_lab_gowanus.png);">
+            <a class="source" href="http://publiclab.org/map/gowanus-canal-brooklyn-new-york/2011-01-22">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>Georeferencing with QGIS</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-gcp-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-gcp-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/georectifiying_types.png);">
+            <a class="source" href="http://www.tankonyvtar.hu/hu/tartalom/tamop425/0032_terinformatika/ch02.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/georectified_boston_transit.jpg);">
+            <a class="source" href="http://benschmidt.org/dighist13/?p=283">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-georeferencing-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-georeferencing-1.png);">
+        </div>
+
+        <div class="slide">
+            <h2>find landmarks easily discerned in both your image and the reference map</h2>
+        </div>
+
+        <div class="slide">
+            <h2>try to just pin down the corners of the image onto the map&mdash;start with 4 points</h2>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass-georeferencing.html" target="_blank">in-class exercise</a></h2>
+        </div>
+
+
+    </body>
+</html>
