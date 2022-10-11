@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>In-class Exercises | Methods 3</title>
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya Sans' rel='stylesheet' type='text/css'>
+        <link href="../css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="../css/inclass.css" rel="stylesheet" />
+    </head>
+    <body>
+        <main>
+            <header>
+                <a href="..">&larr; Methods 3</a>
+                <h1>In-class Exercises</h1>
+            </header>
+
+            <section>
+                <h2>Join census data to calculate covid rates</h2>
+                <ol>
+                    <li>This part is optional. If you want to follow along with downloading data from NHGIS:
+                        <ol>
+                            <li>Go to <a href="https://data2.nhgis.org/">NHGIS</a> and create a login if you don't have one.</li>
+                            <li>Click <strong>Geographic Levels</strong> and the <strong>+</strong> under <strong>State</strong>, then submit.</li>
+                            <li>Click <strong>Years</strong> and check <strong>2020</strong> under <strong>Decennial Years</strong>, then submit.</li>
+                            <li>Click <strong>Topics</strong> and click the <strong>+</strong> next to <strong>Total Population</strong>, then submit.</li>
+                            <li>Click the <strong>+</strong> next to <strong>Race</strong> next to <strong>Total Population</strong>.</li>
+                            <li>Click the <strong>Continue</strong> button in the top right under <strong>Data Cart</strong>.</li>
+                            <li>Again, click the <strong>Continue</strong> button in the top right under <strong>Data Cart</strong>.</li>
+                            <li>Now you should see <strong>Review and Submit</strong>. Click <strong>Submit</strong>.</li>
+                            <li>You should see a table of extracts you have downloaded including the status of your current one. Once it is complete, click the <strong>Tables</strong> button under the <strong>Download Data</strong> column.</li>
+                            <li>I recommend opening the CSV in Excel and saving as an Excel file to avoid issues with ID fields.</li>
+                        </ol>
+                    </li>
+                    <li>In QGIS, reopen the data from the last in-class exercise if you closed it.</li>
+                    <li>In QGIS, open the data downloaded with NHGIS. If you weren't able to follow along, use the data in the folder called <strong>nhgis-total-population-2020</strong>.</li>
+                    <li>Join the census spreadsheet to the state shapefile with Covid data already joined.</li>
+                    <li>Calculate a new field of Covid cases or deaths per 100,000 people.</li>
+                    <li>Make a choropleth showing your new Covid statistic.</li>
+                </ol>
+            </section>
+
+            <footer>
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Methods 3</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ebrelsford.github.io/" property="cc:attributionName" rel="cc:attributionURL">Eric Brelsford</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </footer>
+        </main>
+    </body>
+</html>
