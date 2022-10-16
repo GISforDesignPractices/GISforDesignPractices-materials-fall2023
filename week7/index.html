@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class 7 | Methods 3</title>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya+Sans' rel='stylesheet' type='text/css'>
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+        <link href="../css/pig.css" rel="stylesheet" type="text/css" />
+        <link href="../css/base.css" rel="stylesheet" />
+
+        <script src="../js/hammer.min.js"></script>
+        <script src="../js/pig.js"></script>
+    </head>
+    <body>
+
+        <div class="slide">
+            <p>Welcome to Methods 3, Lecture 7</p>
+            <p>This is a web page that can be viewed as slides.</p>
+            <p>→ to move forward</p>
+            <p>← to go back</p>
+        </div>
+
+        <div class="slide">
+            <h1>Methods 3</h1>
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-analyses.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-analyses.png);">
+            <h2>analysis</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-analyses.png);">
+            <h2>in many cases, these are shortcuts for things you'll do in QGIS</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/analysis-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/analysis-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/analysis-2.png);">
+            <h2>geocoding</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/analysis-3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/analysis-3.png);">
+            <h2>buffer</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/analysis-4.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/analysis-4.png);">
+            <h2>convex hull</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/analysis.gif);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/analysis.gif);">
+            <h2>some are only available if you pay for credits</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-analysis-chain.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-analysis-chain.png);">
+            <h2>you can chain analyses</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-analysis-chain.png);">
+            <h2>for example, to combine filters</h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>how is a webmap different from a map made in QGIS?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/zoom.gif);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/pan.gif);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/popup.gif);">
+        </div>
+
+        <div class="slide">
+            <h2>let's talk about making features look different based on the zoom level</h2>
+        </div>
+
+        <div class="slide">
+            <h2>or "zoom-dependent styles"</h2>
+        </div>
+
+        <div class="slide">
+            <h2>this will take a little...</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/omg.gif); background-size: 75%;">
+          <h2>code</h2>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint" style="font-size: 35px; line-height: 40px;"><code>#layer {
+  marker-width: 2;
+  marker-fill: #EE4D5A;
+  marker-fill-opacity: 0.9;
+  marker-line-color: #FFFFFF;
+  marker-line-width: 1;
+  marker-line-opacity: 1;
+  marker-placement: point;
+  marker-type: ellipse;
+  marker-allow-overlap: true;
+
+  [zoom &gt;= 3] {
+    marker-width: 5;
+  }
+}</code></pre>
+        </div>
+
+        <div class="slide">
+            <h2>CartoCSS</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-github.png);">
+            <a class="source" href="https://github.com/mapbox/carto">(open source)</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto.png);">
+        </div>
+
+        <div class="slide">
+            <h2>why?</h2>
+        </div>
+
+        <div class="slide">
+            <h2>you can do more with it</h2>
+        </div>
+
+        <div class="slide">
+            <h2>you can share it</h2>
+        </div>
+
+        <div class="slide">
+            <h2>you can share it</h2>
+            <p>(it's just text)</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/cartocss-osm.png);">
+            <a class="source" href="https://github.com/gravitystorm/openstreetmap-carto">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/cartocss-osm-detail.png);">
+        </div>
+
+        <div class="slide">
+            <h2>CartoCSS</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/dashboard-car.jpg);">
+            <a class="source" href="http://www.flickr.com/photos/mrstaticvoid/4307191115/">
+                mrstaticvoid on flickr
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/dashboard-airplane.jpg);">
+            <a class="source" href="http://www.flickr.com/photos/niklasstjerna/6636973889/">
+                niklasstjerna on flickr
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/dashboard-airplane-markers.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/dashboard-airplane-polygons.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/dashboard-airplane-lines.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/dashboard-airplane-qqq.jpg);">
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>#layer {
+  marker-fill: #ff307a;
+  marker-line-color: #FFF;
+  marker-line-width: 0.25;
+  marker-line-opacity: 0.4;
+  marker-width: 2;
+  marker-allow-overlap: true;
+}</code></pre>
+        </div>
+
+        <div class="slide">
+            <h2>this is a <em>statement</em></h2>
+        </div>
+
+        <div class="slide">
+            <h2>this is a <em>statement</em></h2>
+            <pre class="prettyprint" style="font-size: 44px; line-height: 44px;"><code>#layer {
+  marker-fill: #ff307a;
+  marker-line-color: #FFF;
+  marker-line-width: 0.25;
+  marker-line-opacity: 0.4;
+  marker-width: 2;
+  marker-allow-overlap: true;
+}</code></pre>
+        </div>
+
+        <div class="slide">
+            <h2>between <em>{</em> <em>}</em>, set your properties</h2>
+        </div>
+
+        <div class="slide">
+            <h2>think of the <em>{</em> <em>}</em> as bookends</h2>
+        </div>
+
+        <div class="slide">
+            <h2>what is a <em>property</em>?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-documentation.png);">
+            <h2>they're defined in the <a href="https://carto.com/developers/styling/cartocss/">documentation</a> for CartoCSS</h2>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>#layer {
+  marker-fill: #ff307a;
+}</code></pre>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>#layer {
+  marker-fill: #ff307a;
+}</code></pre>
+            <p>always one per line, each line ending with a <strong>;</strong></p>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>#layer {
+  marker-fill: #ff307a;
+  marker-line-color: #FFF;
+}</code></pre>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>#layer {
+  marker-fill: #ff307a;
+  marker-line-color: #FFF;
+}</code></pre>
+            <h2>separate the property name and the value by a <em>:</em></h2>
+        </div>
+
+        <div class="slide">
+            <h2>property values will often be <em>color strings</em>, <em>numbers</em>, or <em>true/false</em></h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-documentation.png);">
+            <h2>check the <a href="https://carto.com/developers/styling/cartocss/">documentation</a> if you have any doubts</h2>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>#layer {
+  marker-fill: #ff307a;
+  marker-line-color: #FFF;
+}
+marker-width: 5;</code></pre>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>#layer {
+  marker-fill: #ff307a;
+  marker-line-color: #FFF;
+}
+marker-width: 5;</code></pre>
+            <h2>don't do this!</h2>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>#layer {
+  marker-fill: #ff307a;
+  marker-line-color: #FFF;
+}
+<span class="highlighted">marker-width: 5;</span></code></pre>
+            <h2>this line won't do anything</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/cartocss-outline.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/cartocss-outline.png);">
+            <h2>Carto often splits polygon fill and outline into two statements</h2>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>#layer {
+  polygon-fill: #826DBA;
+  polygon-opacity: 0.9;
+}
+#layer::outline {
+  line-width: 1;
+  line-color: #FFFFFF;
+  line-opacity: 0.5;
+}</code></pre>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass-cartocss-properties.html" target="_blank">in-class exercise</a></h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>let's vary some properties by <em>zoom level</em></h2>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>#layer {
+  marker-width: 3;
+  ...
+  [zoom &gt;= 10] {
+    marker-width: 8;
+  }
+}</code></pre>
+        </div>
+
+        <div class="slide">
+            <h2>let's call these <em>conditional statements</em></h2>
+        </div>
+
+        <div class="slide">
+            <h2><em>conditional statements</em> are only used if some condition is met</h2>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint" style="font-size: 40px; line-height: 50px;"><code>#layer {
+  marker-width: 3;
+  ...
+  [zoom &gt;= 10] {
+    marker-width: 8;
+  }
+}</code></pre>
+            <p>"make the markers 3 pixels wide. if the map is at zoom level 10 or higher, make the markers 8 pixels wide."</p>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint" style="font-size: 50px; line-height: 60px;"><code>#layer {
+  marker-width: 3;
+  ...
+  [zoom &gt;= 10] {
+    marker-width: 8;
+  }
+  [zoom &gt;= 16] {
+    marker-width: 13;
+  }
+}</code></pre>
+        </div>
+
+        <div class="slide">
+            <h2>if you put a zoom condition on the whole layer, the whole layer only appears at that zoom</h2>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint" style="font-size: 50px; line-height: 60px;"><code>#layer[zoom &gt;= 10] {
+  marker-width: 3;
+  ...
+}</code></pre>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint" style="font-size: 50px; line-height: 60px;"><code>#layer[zoom &gt;= 10] {
+  marker-width: 3;
+  ...
+}</code></pre>
+            <h2>the layer will only show up for zoom 10 and above</h2>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass-cartocss-zoom.html" target="_blank">in-class exercise</a></h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>that's not all!</h2>
+        </div>
+
+        <div class="slide">
+            <h2>you can change styles based on a feature's attributes</h2>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint"><code>#layer {
+  marker-width: 3;
+  ...
+  [price &gt;= 200] {
+    marker-width: 8
+  }
+}</code></pre>
+        </div>
+
+        <div class="slide">
+            <h2>look familiar?</h2>
+        </div>
+
+        <div class="slide">
+            <h2>let's call these <em>attribute-dependent styles</em></h2>
+        </div>
+
+        <div class="slide">
+            <h2>conditional statements on strings need to wrap those strings in quotation marks</h2>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint" style="font-size: 50px; line-height: 70px;"><code>#layer {
+  marker-width: 3;
+  ...
+  [room_type = 'Private room'] {
+    marker-width: 8;
+  }
+}</code></pre>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass-cartocss-attribute.html" target="_blank">in-class exercise</a></h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>you can use as many of these as you need to</h2>
+        </div>
+
+        <div class="slide">
+            <pre class="prettyprint" style="font-size: 50px; line-height: 60px;"><code>#layer {
+  [zoom &gt;= 7] {
+    ...
+  }
+  [zoom &gt;= 11] {
+    ...
+  }
+  [zoom &gt;= 12] {
+    ...
+  }
+  ...
+}</code></pre>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>you don't have to memorize all of this</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/cartocss-reference.png);">
+            <a class="source" href="materials/cartocss-reference.pdf">cartocss reference</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-documentation.png);">
+            <h2>use the <a href="https://carto.com/developers/styling/cartocss/">documentation</a></h2>
+        </div>
+
+        <div class="slide">
+            <h2>experiment with Carto's built-in styles, see the code they produce</h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>Urban Reviewer</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/urban-reviewer-full.png);">
+            <a href="http://urbanreviewer.org" target="_blank">urban reviewer</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/596.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/596-signs.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/596-rockaways.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/edgemere-urban-renewal-park-streetview.png);">
+            <h2>
+                <a href="https://www.google.com/maps/place/Edgemere+Urban+Renewal+Park/@40.595588,-73.776975,3a,75y,172.62h,90t/data=!3m4!1e1!3m2!1sZgWcG17VxRvOezZpdWXGkA!2e0!4m6!1m3!3m2!1s0x0:0xae6844ceae037acd!2sEdgemere+Urban+Renewal+Park!3m1!1s0x0:0xae6844ceae037acd!6m1!1e1" target="_blank">Edgemere Urban Renewal Park</a>
+            </h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/edgemere-urban-renewal-park-signs.jpg);">
+            <a class="source" href="http://596acres.org/en/lot/4158370033/" target="_blank">
+                596 Acres
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/edgemere-urban-renewal-park-signs-zoom.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/edgemere-urban-renewal-park-signs-zoom.jpg);">
+            <h2>call Parks and say "where's our park?"</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/edgemere-urban-renewal-park.png);">
+            <h2>
+                <a href="https://www.google.com/maps/place/Edgemere+Urban+Renewal+Park/@40.595588,-73.776975,17z/data=!4m6!1m3!3m2!1s0x0:0xae6844ceae037acd!2sEdgemere+Urban+Renewal+Park!3m1!1s0x0:0xae6844ceae037acd" target="_blank">Edgemere Urban Renewal Park</a>
+            </h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/moses.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/fitzgerald-urban-renewal.jpg);">
+            <a class="source" href="https://muse.jhu.edu/book/11514">Fitzgerald</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/arverne-1968.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/arverne-satellite.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/arverne-curbed.jpg);">
+            <h2>today</h2>
+            <a class="source" href="http://kensinger.blogspot.com/">Nathan Kensinger</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/spura.jpg);">
+            <h2>today</h2>
+            <a class="source" href="http://www.nycedc.com/project/seward-park-mixed-use-development-project">NYC EDC</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/lincoln-center.jpg);">
+            <h2>today</h2>
+            <a class="source" href="http://performingartseducators.org/index.php/fourth-post/">Performing Arts Educators</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/cadman-plaza.jpg);">
+            <h2>today</h2>
+            <a class="source" href="http://www.panoramio.com/photo/34791344">Panoramio</a>
+        </div>
+
+        <div class="slide">
+            <h2>let's map them!</h2>
+        </div>
+
+        <div class="slide">
+            <h2>we weren't the first to have this idea</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/cdp1968.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/cdp1968.png);">
+            <h2>Community Development Program Progress Report (1968)</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/cdp1968-map.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/cdp1968-map-zoom.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/cdp1968-arverne-map.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/atlas1984.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/atlas1984.png);">
+            <h2>Atlas of Urban Renewal (1984)</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/atlas1984-manhattan.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/atlas1984-e14th.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/atlas1984-e14th-zoom.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/foil-letter.png);">
+            <h2>FOIL</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/foil-paper.jpg);">
+            <h2>FOILed!</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/foil-letter-inspection.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/bronx-park-south-plan.JPG);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/bronx-park-south-plan-detail.JPG);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/plan-map.JPG);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/arverne-google-drive.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/crown-heights-google-drive.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/crown-heights-google-drive.png);">
+            <h2>thanks, volunteers!</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/urbanreviewer_final_excel.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/bbl.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/disappointed.gif);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/urbanreviewer_final_excel_arrow.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/urbanreviewer_final_excel_arrow2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/tax-map.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/tax-map-zoom.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc-shp.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/urban-reviewer-full.png);">
+            <a href="http://urbanreviewer.org" target="_blank">urban reviewer</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/seward-park.png);">
+            <a href="http://www.urbanreviewer.org/#map=17/40.7154/-73.9864&plan=Seward+Park" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/seward-park-data.png);">
+            <a href="https://github.com/596acres/urbanreviewer/blob/gh-pages/data/geojson/us/ny/nyc/Manhattan/Seward%20Park.geojson" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/still-vacant1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/still-vacant2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/still-vacant3.png);">
+        </div>
+
+
+    </body>
+</html>
