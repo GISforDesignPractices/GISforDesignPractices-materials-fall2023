@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>In-class Exercises | Methods 3</title>
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya Sans' rel='stylesheet' type='text/css'>
+        <link href="../css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="../css/inclass.css" rel="stylesheet" />
+    </head>
+    <body>
+        <main>
+            <header>
+                <a href="..">&larr; Methods 3</a>
+                <h1>In-class Exercises</h1>
+            </header>
+
+            <section>
+                <h2>Heatmaps</h2>
+                <p>Using the Low Income Housing Tax Credit (LIHTC) Development points layer, add a heatmap of low-income rental properties created through the LIHTC program city of your choice.</p>
+                <ol>
+                    <li>If you haven't already, download <a href="data/week8data.zip">today's data</a>.</li>
+                    <li>Add the Low Income Housing Tax Credit (LIHTC) csv to QGIS and map the points using longitude (x field) and latitude (y field).</li>
+                    <li>Use the Field Calculator to create a new field that fixes <strong>li_units</strong> to be numeric. Make the type integer and use the expression <code>if("li_units" = 'NA', null, to_int("li_units"))</code>. That is, if <strong>li_units</strong> has "NA" in it set the value to <strong>null</strong> (empty), else convert it to an integer.
+                    </li>
+                    <li>Toggle editing off to save your changes.</li>
+                    <li>Add the Borough Boundaries shapefile.</li>
+                    <li>Use Select by Location to select the LIHTC buildings in New York City.</li>
+                    <li>Export the LIHTC Listings data with 2263 as the CRS.</li>
+                    <li>Search for <strong>Heatmap (Kernel Density Estimation)</strong> in the QGIS search box.</li>
+                    <li>Weight the heat map based on the number of affordable units in the building. Set <strong>Weight from field</strong> to your numeric <strong>li_units</strong> field.</li>
+                    <li>Set the radius to 2000 feet.</li>
+                    <li>Set the rows to 3000. This is the number of rows of pixels in the resulting raster. The columns should update automatically.</li>
+                    <li>Style the output raster with a <strong>Singleband Pseudocolor</strong> render type and select a color ramp.</li>
+                    <li>Create a few more heatmaps with varying radii and resolution (rows and columns).</li>
+                </ol>
+            </section>
+
+            <footer>
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Methods 3</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ebrelsford.github.io/" property="cc:attributionName" rel="cc:attributionURL">Eric Brelsford</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </footer>
+        </main>
+    </body>
+</html>
