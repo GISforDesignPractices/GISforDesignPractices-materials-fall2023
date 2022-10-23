@@ -16,7 +16,7 @@
                 <h2>Heatmaps</h2>
                 <p>Using the Low Income Housing Tax Credit (LIHTC) Development points layer, add a heatmap of low-income rental properties created through the LIHTC program city of your choice.</p>
                 <ol>
-                    <li>If you haven't already, download <a href="data/week8data.zip">today's data</a>.</li>
+                    <li>If you haven't already, download <a href="data/week9data.zip">today's data</a>.</li>
                     <li>Add the Low Income Housing Tax Credit (LIHTC) csv to QGIS and map the points using longitude (x field) and latitude (y field).</li>
                     <li>Use the Field Calculator to create a new field that fixes <strong>li_units</strong> to be numeric. Make the type integer and use the expression <code>if("li_units" = 'NA', null, to_int("li_units"))</code>. That is, if <strong>li_units</strong> has "NA" in it set the value to <strong>null</strong> (empty), else convert it to an integer.
                     </li>
