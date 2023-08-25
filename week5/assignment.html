@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Assignment 5 | Methods 3</title>
+        <title>Assignment 6 | Methods 3</title>
         <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya Sans' rel='stylesheet' type='text/css'>
         <link href="../css/pages.css" rel="stylesheet" type="text/css" />
         <link href="../css/inclass.css" rel="stylesheet" />
@@ -9,52 +9,44 @@
         <main>
             <header>
                 <a href="..">&larr; Methods 3</a>
-                <h1>Assignment 5</h1>
+                <h1>Assignment 6</h1>
             </header>
 
             <section>
-                <p>This week we covered a major feature of any GIS that helps you modify data: geoprocessing.</p>
-            </section>
-
-            <section>
-                <h2>Resources</h2>
-                <p>Videos:</p>
-                <ul>
-                    <li><a class="" href="https://www.youtube.com/watch?v=Rj8J_6pV620">Clipping</a></li>
-                    <li><a class="" href="https://www.youtube.com/watch?v=LAGQIrPHncA">Buffering</a></li>
-                </ul>
-                <p>Not updated for QGIS 3, but should work fine:</p>
-                <ul>
-                    <li><a class="" href="https://www.youtube.com/watch?v=mGSNfohiSgU">Geoprocessing</a></li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>Part 1: Geoprocessing</h2>
-                <p>Geoprocessing tools give you the means to overlay multiple vector layers in order to modify the layers and potentially combine them. You are most likely going to find the following geoprocessing functions to be the most useful:</p>
-                <ul>
-                    <li>clipping</li>
-                    <li>buffers</li>
-                    <li>difference</li>
-                </ul>
-                <p>Buffers can be especially useful when talking about <em>proximity</em>, and you'll probably find these useful in the following assignment from your council member:</p>
-                <div style="background: #ddd; padding: 15px;">
-                    <p>Hi GIS pro,</p>
-                    <p>The group in our district arguing for safer streets is looking for more detail about <a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Motor-Vehicle-Collisions/h9gi-nx95">motor vehicle collisions</a> for the past year. I was thinking we could either highlight the collisions near <a href="https://data.cityofnewyork.us/Education/School-Point-Locations/jfju-ynrr">schools</a> or <a href="https://data.cityofnewyork.us/Transportation/Bicycle-Routes/7vsa-caz7">bike lanes</a>. I trust you to pick the one you find most illuminating. In addition to highlighting these collisions I'd like to answer these questions:</p>
-                    <ul>
-                        <li>What percentage of the crashes in our district happened near schools or bike lanes (again, your choice)?</li>
-                        <li>How many injuries and deaths happened as a result of these crashes?</li>
-                    </ul>
-                    <p>Thanks for all your help!</p>
-                </div>
-                <p>Buffer the schools (I'd start with 500 feet) or bike lanes (I'd start with 25 feet) and use Select by Location to find the collisions in those buffers. You're free to re-use the collisions data you downloaded for the previous assignment, in addition to other map elements as they're useful.</p>
-                <p>As there is only one map this week and we covered some other QGIS features in the beginning of class on Tuesday (select by location, labels, legends), I am looking to see you focusing on the nuances of your map. Try out some of these features we talked about in class and see how far you can take them.</p>
+                <p>When you <em>join</em> two or more datasets, you combine them feature-by-feature, and this often gives attributes to a feature that it would not have otherwise had.</p>
+                <p><strong>Attribute joins</strong> add attributes to features based on a <strong>unique identifier</strong>. Often you will have a spatial dataset (such as a shapefile) and a CSV file with extra data that you would like to map. As long as both the spatial data and the CSV have a common unique identifier (sometimes this is a name, but it could be a unique number or an address) you can join them in QGIS and add the data from the CSV to the spatial data.</p>
+                <p>Use attribute joins and US Census data to map either <strong>renter occupancy</strong> or <strong>median household income</strong> by census tract in the area within NYC you have been focusing on over the past few assignments.</p>
+                <p>Download census data using <a href="https://data.census.gov/">data.census.gov</a>, join with the <a href="https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.2018.html">census tracts</a>, and make a choropleth map with some of the joined data. Choose which data to get:</p>
+                <ol>
+                    <li>renter vs owner occupancy
+                        <ol>
+                            <li>Search for <strong>housing tenure</strong></li>
+                            <li>Click the first result <strong>(Selected Housing Characteristics</strong>)</li>
+                            <li>Change the <strong>product</strong> to 2019 ACS 5-year</li>
+                            <li>Click <strong>Customize Table</strong></li>
+                            <li>Under <strong>Geographies</strong> select <strong>Tract</strong><strong> &gt; New York &gt; All Census Tracts in New York</strong></li>
+                            <li>Click <strong>Download Table</strong></li>
+                            <li>As discussed in class, you will likely want to edit the CSV that you download.</li>
+                        </ol>
+                    </li>
+                    <li>household income
+                        <ol>
+                            <li>Search for <strong>household income</strong></li>
+                            <li>Click the first result (<strong>Income in the past 12 months...</strong>)</li>
+                            <li>Change the <strong>product</strong> to 2019 ACS 5-year</li>
+                            <li>Click <strong>Customize Table</strong></li>
+                            <li>Under <strong>Geographies</strong> select <strong>Tract</strong><strong> &gt; New York &gt; All Census Tracts in New York</strong></li>
+                            <li>Click <strong>Download Table</strong></li>
+                            <li>As discussed in class, you will likely want to edit the CSV that you download.</li>
+                        </ol>
+                    </li>
+                </ol>
             </section>
 
             <section>
                 <h2>Submitting Your Work</h2>
-                <p>Include <strong>a PDF or image export</strong> for Part 1.</p>
-                <p>Finally, include a <strong>short summary</strong> (1/2 page) of what you did for this assignment. Explain what you created and how you did so. What did you have problems with? What did you enjoy? What would you like to know how to do next?</p>
+                <p>Use a QGIS <strong>Print Layout</strong> to create <strong>a PDF or image</strong>. Make sure to add map accessories such as legends, titles, and scale bars as appropriate. Refer to your sources as appropriate.</p>
+                <p>Finally, include a <strong>short summary</strong> of what you did for this assignment. Explain what you created and how you did so. What did you have problems with? What did you enjoy? What would you like to know how to do next?</p>
             </section>
 
             <footer>

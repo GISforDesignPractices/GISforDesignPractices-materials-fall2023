@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Class 4 | GIS for Design Practices</title>
+        <title>Class 6 | GIS for Design Practices</title>
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
@@ -16,601 +16,622 @@
     <body>
 
         <div class="slide">
-            <p>Welcome to GIS for Design Practices, Lecture 4</p>
+            <p>Welcome to GIS for Design Practices, Lecture 6</p>
             <p>This is a web page that can be viewed as slides.</p>
             <p>→ to move forward</p>
             <p>← to go back</p>
-            <p>g to to enter grid view</p>
         </div>
 
         <div class="slide">
             <h1>GIS for Design Practices</h1>
         </div>
 
+        <div class="slide" style="background-image: url(img/assignment-maude.png);">
+            <a class="source">Maude</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/assignment-jonathan.png);">
+            <a class="source">Jonathan</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/final_project_milestones.png);">
+        </div>
+
+        <div class="slide intermission"></div>
+
         <div class="slide">
-            <h2>(review)</h2>
+            <h2>joins</h2>
         </div>
-
-          <!--
 
         <div class="slide">
-            <h2>the Modifiable Areal Unit Problem</h2>
-            <p>the shapes you use can influence the way your data looks without changing the data</p>
+            <h2>attribute joins</h2>
         </div>
 
-        <div class="slide" style="background-image: url(img/maup_rate_numbers.png);">
+        <div class="slide" style="background-image: url(img/grafting.jpg);">
         </div>
 
-        -->
+        <div class="slide" style="background-image: url(img/grafting.jpg);">
+            <h2>joins relate two datasets to each other</h2>
+        </div>
 
-        <!-- <div class="slide" style="background-image: url(img/cdc_ebola.jpg);">
-            <a class="source" href="http://www.cdc.gov/vhf/ebola/resources/distribution-map-guinea-outbreak.html">source</a>
-        </div> -->
+        <div class="slide" style="background-image: url(img/graft-potato-tomato.jpg);">
+            <a class="source" href="http://motherboard.vice.com/read/why-does-the-tomato-potato-plant-exist">source</a>
+        </div>
 
-        <!-- 
+        <div class="slide" style="background-image: url(img/graft-potato-tomato.jpg);">
+            <h2>joins create new hybrid datasets</h2>
+            <a class="source" href="http://motherboard.vice.com/read/why-does-the-tomato-potato-plant-exist">source</a>
+        </div>
 
-        <div class="slide" style="background-image: url(img/flint-zip-codes-misaligned.jpg);">
-            <a class="source" href="https://theconversation.com/how-zip-codes-nearly-masked-the-lead-problem-in-flint-65626">
+        <div class="slide" style="background-image: url(img/ketchup-n-fries.jpg);">
+            <a class="source" href="https://diybackyardfarm.com/2015/06/03/have-you-seen-this-cool-plant/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/attribute-join-csv.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/attribute-join-csv.png);">
+            <h2>"I have this spreadsheet I want to map..."</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/attribute-join-shp.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/attribute-join-shp.png);">
+            <h2>you need a file with relatable geographies</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/attribute-join-shp.png);">
+            <h2>usually these are IDs of some sort</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/attribute-join-fields.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/attribute-join-fields.png);">
+            <h2>and a column in each file that relates the two</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/attribute-join-layer.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/attribute-join-layer.png);">
+            <h2>open the layer properties on the layer you want to add data to</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/attribute-join-layer.png);">
+            <h2>this is almost always the spatial layer (shapefile or otherwise)</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/attribute-join-properties.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/attribute-join-properties.png);">
+            <h2>go to the <em>joins</em> tab and add a new one</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/attribute-join-dialog.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/attribute-join-dialog.png);">
+            <h2><em>join layer</em>: the spreadsheet you're getting data from</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/attribute-join-dialog.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/attribute-join-dialog.png);">
+            <h2><em>join field</em>: the field to join with from the spreadsheet</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/attribute-join-dialog.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/attribute-join-dialog.png);">
+            <h2><em>target field</em>: the field to join with from the spatial layer</h2>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass-attribute-join.html" target="_blank">in-class exercise</a></h2>
+        </div>
+
+        <div class="slide">
+            <h2>what is the census?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_2010.jpg);">
+            <a class="source" href="http://www.census.gov/1940census/">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>decennial census</h2>
+        </div>
+
+        <div class="slide">The <a href="https://www.census.gov/programs-surveys/decennial-census.html">U.S. census</a> counts every resident of the country every ten years on the year ending in zero. The US government has conducted a survey every ten years since 1790.  The Census Bureau counts each resident where they live on April 1.</div>
+
+        <div class="slide">  The Constitution mandates the enumeration to determine how to apportion the House of Representatives among the states.  The census is <strong>not</strong> a count of citizens, it is a count of <strong>residents</strong>.</div>
+
+        <div class="slide">
+            <h2>American Community Survey</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/acs_computers.png);">
+            <a class="source" href="http://www.pewresearch.org/fact-tank/2014/09/19/census-computer-ownership-internet-connection-varies-widely-across-u-s/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/acs_disabilities.jpg);">
+            <a class="source" href="https://usodep.blogs.govdelivery.com/2013/11/12/american-community-survey-statistics-help-you-learn-about-people-with-disabilities-in-your-community/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/acs_commute.png);">
+            <a class="source" href="http://www.bikewalkalliance.org/blog/248-why-biking-a-walking-advocates-love-and-hate-the-census">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/acs_dec.png);">
+            <a class="source" href="https://www.census.gov/programs-surveys/acs/about/acs-and-census.html">
                 source
             </a>
         </div>
 
-        <div class="slide" style="background-image: url(img/flint-zip-codes-misaligned.jpg);">
-            <h2>the modifiable areal unit problem</h2>
-            <a class="source" href="https://theconversation.com/how-zip-codes-nearly-masked-the-lead-problem-in-flint-65626">
+        <div class="slide">
+            <h2>margin of error: higher with 1-year estimates and smaller geometries</h2>
+        </div>
+
+        <div class="slide">
+            <h2>no matter which data you download, you'll need appropriate geographies to go with it</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/blocks_sf_city.jpg);">
+            <a class="source" href="http://www.datapointed.net/2012/04/parts-and-parcels-us-census-block-maps/">
                 source
             </a>
         </div>
 
-        <div class="slide" style="background-image: url(img/flint-zip-codes-misaligned.jpg);">
-            <p style="background-color: rgba(255, 255, 255, 0.7);">"One-third of all homes with a Flint ZIP code lie outside the city. Thus, the state’s numbers for Flint were watered down by an additional 50 percent of addresses that weren’t in the city and weren’t using Flint water."</p>
-            <a class="source" href="https://theconversation.com/how-zip-codes-nearly-masked-the-lead-problem-in-flint-65626">
+        <div class="slide" style="background-image: url(img/blocks_sf_city.jpg);">
+            <h2><em>census blocks</em> are the smallest area data is aggregated to</h2>
+            <a class="source" href="http://www.datapointed.net/2012/04/parts-and-parcels-us-census-block-maps/">
                 source
             </a>
         </div>
 
-        -->
 
-        <div class="slide" style="background-image: url(img/collisions-not-normalized.png);">
+        <div class="slide" style="background-image: url(img/census_small_area_geography.jpg);">
+            <a class="source" href="https://www.census.gov/newsroom/blogs/random-samplings/2014/07/understanding-geographic-relationships-counties-places-tracts-and-more.html">
+                source
+            </a>
         </div>
 
-        <div class="slide" style="background-image: url(img/collisions-not-normalized.png);">
-            <h2>you should almost never make choropleths with just counts</h2>
+        <div class="slide" style="background-image: url(img/nobody_lives_here.jpg);">
+            <a class="source" href="http://tumblr.mapsbynik.com/post/82791188950/nobody-lives-here-the-nearly-5-million-census">
+                source
+            </a>
         </div>
 
-        <div class="slide" style="background-image: url(img/collisions-normalize.png);">
+        <div class="slide" style="background-image: url(img/blocks.png);">
+            <h2>blocks</h2>
         </div>
 
-        <div class="slide" style="background-image: url(img/collisions-normalize.png);">
-            <h2>think about ways to <em>normalize</em> your data</h2>
+        <div class="slide" style="background-image: url(img/block_groups.png);">
+            <h2>block groups</h2>
         </div>
 
-        <div class="slide" style="background-image: url(img/collisions-normalize.png);">
-            <h2>this makes the data comparable across regions</h2>
+        <div class="slide" style="background-image: url(img/tracts.png);">
+            <h2>tracts</h2>
         </div>
 
-        <div class="slide" style="background-image: url(img/normalize-gistbook.png); background-size: 75%;">
-            <a class="source" href="https://gistbok.ucgis.org/bok-topics/statistical-mapping-enumeration-normalization-classification">source</a>
+        <div class="slide" style="background-image: url(img/tracts.png);">
+            <h2>tracts have population between 1,200 and 8,000, optimally 4,000</h2>
+            <a class="source" href="https://www.census.gov/geo/reference/gtc/gtc_ct.html">
+                source
+            </a>
         </div>
 
-        <div class="slide" style="background-image: url(img/collisions-normalized.png);">
+        <div class="slide" style="background-image: url(img/census_hierarchy.jpg);">
+            <a class="source" href="http://blog.datapolitan.com/2013/08/18/census-sample-survey-tract-block-zip-code/">
+                source
+            </a>
         </div>
 
-        <div class="slide intermission"></div>
-
-        <div class="slide">
-            <h2>duplicating layers</h2>
+        <div class="slide" style="background-image: url(img/census_boundary_files.png);">
+            <a class="source" href="https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html">source</a>
         </div>
 
-        <div class="slide" style="background-image: url(img/duplicate-layer.png);"></div>
-
-        <div class="slide">
-            <h2>you can copy and paste styles</h2>
+        <div class="slide" style="background-image: url(img/nyc_ntas.png);">
+            <a class="source" href="https://www1.nyc.gov/site/planning/data-maps/open-data/dwn-acs-nta.page">source</a>
         </div>
 
-        <div class="slide" style="background-image: url(img/copy-style-1.png);"></div>
-
-        <div class="slide" style="background-image: url(img/copy-style-2.png);"></div>
-
-        <div class="slide" style="background-image: url(img/copy-style-3.png);"></div>
-
-        <div class="slide" style="background-image: url(img/copy-style-4.png);"></div>
-
-        <div class="slide">
-            <h2>you can save a layer with its style</h2>
+        <div class="slide" style="background-image: url(img/nyc_ntas.png);">
+            <h2>NTAs are NYC-specific aggregations of census tracts</h2>
+            <a class="source" href="http://www1.nyc.gov/site/planning/data-maps/open-data/dwn-nynta.page">source</a>
         </div>
 
-        <div class="slide" style="background-image: url(img/save-as-layer-definition.png);"></div>
-
-        <!-- <div class="slide">
-            <h2>insets</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/inset.png);"></div> -->
-
-        <div class="slide intermission"></div>
-
-        <div class="slide">
-            <h2>selecting features</h2>
+        <div class="slide" style="background-image: url(img/nyc_ntas_shp.png);">
         </div>
 
         <div class="slide">
-            <h2>QGIS has a few way to select features</h2>
+            <h2>downloading census data</h2>
         </div>
 
-        <div class="slide">
-            <h2>QGIS has a few way to select features</h2>
-            <ul style="list-style: disc; padding-left: 50px;">
-                <li>by hand</li>
-            </ul>
+        <div class="slide" style="background-image: url(img/data-census-gov.png);">
+            <a class="source" href="https://data.census.gov/cedsci/">data.census.gov</a>
         </div>
 
-        <div class="slide">
-            <h2>QGIS has a few way to select features</h2>
-            <ul style="list-style: disc; padding-left: 50px;">
-                <li>by hand</li>
-                <li>by location</li>
-            </ul>
+        <div class="slide" style="background-image: url(img/data-census-gov.png);">
+            <h2>I used to recommend this but it has gotten hard to use these files in a GIS</h2>
+            <a class="source" href="https://data.census.gov/cedsci/">data.census.gov</a>
         </div>
 
-        <div class="slide">
-            <h2>QGIS has a few way to select features</h2>
-            <ul style="list-style: disc; padding-left: 50px;">
-                <li>by hand</li>
-                <li>by location</li>
-                <li>by expression</li>
-            </ul>
+        <div class="slide" style="background-image: url(img/CensusAPI.png);">
+            <a class="source" href="https://www.census.gov/data/developers/data-sets.html/">source</a>
         </div>
 
-        <div class="slide" style="background-image: url(img/selection-tools.png); background-size: 20%;">
+        <div class="slide" style="background-image: url(img/CensusAPI.png);">
+            <h2>instead, let's learn how to use the <em>Census API!</em></h2>
+            <a class="source" href="https://www.census.gov/data/developers/data-sets.html/">source</a>
         </div>
-
-        <div class="slide" style="background-image: url(img/selection-tools.png); background-size: 20%;">
-            <h2>by hand (selection tools)</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/selection-draw.png); background-size: 40%;">
-        </div>
-
-        <div class="slide">
-            <h2>select by location</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/select-by-location-0.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/select-by-location-1.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/select-by-location-2.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/select-by-location-3.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/selection-expression.png); background-size: 40%;">
-        </div>
-
-        <div class="slide" style="background-image: url(img/select-by-expression.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/select-by-expression.png);">
-            <h2>write an expression on the left</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/select-by-expression-field.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/select-by-expression-field.png);">
-            <h2>field name in quotes</h2>
-            <pre style="background-color: rgba(255, 255, 255, 0.8);"><code>"availableB"</code></pre>
-        </div>
-
-        <div class="slide" style="background-image: url(img/select-by-expression-field.png);">
-            <h2>use typical comparison operators with numbers</h2>
-            <pre style="background-color: rgba(255, 255, 255, 0.8);"><code>"availableB" &lt; 10</code></pre>
-        </div>
-
-        <div class="slide" style="background-image: url(img/expression-operators.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/select-by-expression-field.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/select-by-expression-field-2.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/select-by-expression-field-2.png);">
-            <h2>when comparing text, always put the text in single quotes</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/select-by-expression-field-2.png);">
-            <h2>when comparing text, always put the text in single quotes</h2>
-            <pre style="background-color: rgba(255, 255, 255, 0.8);"><code>"stationNam" = 'Willoughby Ave &amp; Hall St'</code></pre>
-        </div>
-
-        <div class="slide" style="background-image: url(img/expressions-ilike.png);">
-        </div>
-
-        <div class="slide">
-            <h2>selecting data and exporting as a new shapefile is one way to isolate data</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/export-0.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/export-1.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/export-1.png);">
-            <h2>keep your file names descriptive</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/export-2.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/export-2.png);">
-            <h2><em>always</em> click this button to select a destination</h2>
-        </div>
-
-        <div class="slide">
-            <h2><a href="inclass-select-by-location.html" target="_blank">in-class exercise</a></h2>
-        </div>
-
-        <div class="slide intermission"></div>
-
-        <div class="slide">
-            <h2>a GIS will let you:</h2>
-            <ul style="list-style: disc; padding-left: 50px;">
-                <li>visualize map data</li>
-                <li>create and edit map data</li>
-                <li>overlay map data</li>
-                <li>analyze map data</li>
-            </ul>
-        </div>
-
-        <!-- <div class="slide" style="background-image: url(img/project-manon-0.png);">
-            <a class="source" href="https://due-parsons.github.io/methods3-fall2018/projects/mapping-gentrification-risk-in-the-grand-paris/">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/project-manon-1.png);">
-            <a class="source" href="https://due-parsons.github.io/methods3-fall2018/projects/mapping-gentrification-risk-in-the-grand-paris/">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/project-manon-2.png);">
-            <a class="source" href="https://due-parsons.github.io/methods3-fall2018/projects/mapping-gentrification-risk-in-the-grand-paris/">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/project-manon-3.png);">
-            <a class="source" href="https://due-parsons.github.io/methods3-fall2018/projects/mapping-gentrification-risk-in-the-grand-paris/">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/project-manon-4.png);">
-            <a class="source" href="https://due-parsons.github.io/methods3-fall2018/projects/mapping-gentrification-risk-in-the-grand-paris/">source</a>
-        </div>
-
-        <div class="slide">
-            <h2>we'll talk more about modeling next time</h2>
-        </div> -->
-
-        <div class="slide intermission"></div>
-
-        <div class="slide">
-            <h2>Geoprocessing</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/qgis-geoprocessing.png);">
-        </div>
-
-        <div class="slide">
-            <h2>buffers</h2>
-        </div>
-
-        <div class="slide">
-            <h2>buffers</h2>
-            <p>make a "buffer" around features</p>
-        </div>
-
-        <div class="slide" style="background-image: url(img/fig9-26.gif);">
-            <a class="source" href="http://www.paulbolstad.net/gisbook.html">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/qgis-buffer.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/fig9-31.gif);">
-            <a class="source" href="http://www.paulbolstad.net/gisbook.html">source</a>
-        </div>
-
-        <div class="slide">
-            <h2>well, why?</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/techbustops.png);">
-            <a class="source" href="https://antievictionmap.com/tech-bus-stops-and-evictions">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/techbusblockades.jpg);">
-            <a class="source" href="https://antievictionmap.com/tech-bus-stops-and-evictions">source</a>
-        </div>
-
 
         <!---
 
-        <div class="slide" style="background-image: url(img/latimes-homeless-buffer.png);">
-            <a class="source" href="https://www.latimes.com/projects/homeless-sleeping-maps/">source</a>
+        <div class="slide" style="background-image: url(img/nhgis-0.png);">
         </div>
 
-        <div class="slide" style="background-image: url(img/latimes-homeless-buffer-2.png);">
-            <a class="source" href="https://www.latimes.com/projects/homeless-sleeping-maps/">source</a>
+        <div class="slide" style="background-image: url(img/nhgis-1.png);">
         </div>
 
-        -->
-
-        <div class="slide" style="background-image: url(img/walk-to-a-park-area.png);">
-            <a class="source" href="https://data.cityofnewyork.us/Recreation/Walk-to-a-Park-Service-area/5vb5-y6cv">source</a>
+        <div class="slide" style="background-image: url(img/nhgis-2.png);">
         </div>
 
-        <div class="slide">
-            <h2>you can make negative buffers</h2>
+        <div class="slide" style="background-image: url(img/nhgis-3.png);">
         </div>
 
-        <div class="slide">
-            <h2>clipping</h2>
+        <div class="slide" style="background-image: url(img/nhgis-4.png);">
         </div>
 
-        <div class="slide" style="background-image: url(img/clip-0.png);"></div>
-
-        <div class="slide" style="background-image: url(img/clip-1.png);"></div>
-
-        <div class="slide" style="background-image: url(img/clip-2.png);"></div>
-
-        <div class="slide">
-            <h2>overlay operations</h2>
+        <div class="slide" style="background-image: url(img/nhgis-5.png);">
         </div>
 
-        <div class="slide" style="background-image: url(img/set_operations.gif);">
+        <div class="slide" style="background-image: url(img/nhgis-6.png);">
         </div>
 
-        <div class="slide" style="background-image: url(img/fig9-32.png);">
-            <a class="source" href="http://www.paulbolstad.net/gisbook.html">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/fig9-35.png);">
-            <a class="source" href="http://www.paulbolstad.net/gisbook.html">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/intersect.gif);">
-            <h2>Intersect</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/union.png);">
-            <h2>Union</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/fig9-43.png);">
-            <a class="source" href="http://www.paulbolstad.net/gisbook.html">source</a>
-        </div>
-
-        <div class="slide">
-            <h2>usually you'll use geoprocessing functions in a chain</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/fig9-1.png);">
-            <a class="source" href="http://www.paulbolstad.net/gisbook.html">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/fig9-1.png);">
-            <h2>keep track of these as you work!</h2>
-        </div>
-
-        <div class="slide">
-            <h2><a href="inclass-geoprocessing.html" target="_blank">in-class exercise</a></h2>
-        </div>
-
-        <div class="slide">
-            <h2>Creating data</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/surveyors.png);">
-            <a class="source" href="http://www.aocweb.org/surveyors/">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/trigonometry.jpg);">
-            <a class="source" href="http://www.mathamazement.com/Lessons/Pre-Calculus/04_Trigonometric-Functions/applications-of-trigonometric-functions.html">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/triangulation.jpg);">
-            <a class="source" href="http://www.icsm.gov.au/mapping/surveying2.html">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/trigonometrical_survey_of_india.jpg);">
-            <a class="source" href="https://commons.wikimedia.org/wiki/File:1922_Index_of_Great_Trigonometrical_Survey_of_India.jpg">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/trigonometrical_survey_of_india_zoom.jpg);">
-            <a class="source" href="https://commons.wikimedia.org/wiki/File:1922_Index_of_Great_Trigonometrical_Survey_of_India.jpg">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/everest.jpg);">
-            <a class="source" href="https://alpinedrome.wordpress.com/tag/himalaya/">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/digitizing.jpg);">
-            <a class="source" href="http://www.geo.hunter.cuny.edu/aierulli/gis2/lectures/Lecture4/lecture4.html">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/digitizer.jpg);">
-            <a class="source" href="http://www.geo.hunter.cuny.edu/aierulli/gis2/lectures/Lecture4/lecture4.html">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/gps_recievers.jpg);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/gps_satellites_reading.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/osm-id.gif);">
-            <a class="source" href="https://www.mapbox.com/blog/id-for-openstreetmap-reaches-beta-1/">via mapbox</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/qgis-new-layer.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/qgis-edit-toolbar.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/qgis-install-qms-0.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/qgis-install-qms-1.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/qgis-install-qms-2.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/qgis-install-qms-3.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/qgis-install-qms-4.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/qgis-install-qms-5.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/0JamaicaBay-Stamen.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/0JamaicaBay-Googlemaps.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/1JamaicaBay-Stamentoday.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/2JamaicaBay-1924.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/3JamaicaBay-1924wetland.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/4JamaicaBay-overlay.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/5Rockaway-historicalmap-1911.jpeg);">
-            <a href="https://cooper.edu/gallery/rockaway-peninsula" class="source">source</a>
-        </div>
-
-        <!----
-        <div class="slide" style="background-image: url(img/georectified_manhattan.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/georectified_manhattan_transparent.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/georectified_manhattan_zoom.png);">
+        <div class="slide" style="background-image: url(img/nhgis-7.png);">
         </div>
 
         -->
 
-        <div class="slide">
-            <h2>Georeferencing</h2>
+        <div class="slide" style="background-image: url(img/);">
+            <h2>Benefits of the Census API:</h2>
+            
         </div>
 
-        <div class="slide" style="background-image: url(img/holc-scan.jpg);">
+        <div class="slide" style="background-image: url(img/);">
+            <h2>Benefits of the Census API:</h2>
+            <ul style="list-style: disc; padding-left: 50px;">
+                <li>let's you pull targeted data</li>
+                
+            </ul>
         </div>
 
-        <div class="slide" style="background-image: url(img/mapping-inequality.png);">
-            <a href="https://dsl.richmond.edu/panorama/redlining/#loc=10/41.926/-87.672&city=chicago-il" class="source">source</a>
+        <div class="slide" style="background-image: url(img/);">
+            <h2>Benefits of the Census API:</h2>
+            <ul style="list-style: disc; padding-left: 50px;">
+                <li>let's you pull targeted data</li>
+                <li>helps avoid giant, unworkable tables</li>
+              
+            </ul>
         </div>
 
-        <div class="slide" style="background-image: url(img/mapping-inequality-hover.png);">
-            <a href="https://dsl.richmond.edu/panorama/redlining/#loc=10/41.9437/-87.7045&opacity=0.8&city=chicago-il" class="source">source</a>
+        <div class="slide" style="background-image: url(img/);">
+            <h2>Benefits of the Census API:</h2>
+            <ul style="list-style: disc; padding-left: 50px;">
+                <li>let's you pull targeted data</li>
+                <li>helps avoid giant, unworkable tables</li>
+                <li>data can be updated in a breeze</li>
+            </ul>
         </div>
 
-        <div class="slide" style="background-image: url(img/mapping-inequality-download.png);">
-            <a href="https://dsl.richmond.edu/panorama/redlining/#loc=11/41.925/-87.731&city=chicago-il&text=downloads" class="source">source</a>
+        <div class="slide" style="background-image: url(img/);">
+            <h2>Benefits of the Census API:</h2>
+            <ul style="list-style: disc; padding-left: 50px;">
+                <li>let's you pull targeted data</li>
+                <li>helps avoid giant, unworkable tables</li>
+                <li>data can be updated in a breeze</li>
+                <li>helpful user guide, tutorials, documentation</li>
+            </ul>
         </div>
 
-        <div class="slide" style="background-image: url(img/mapping-inequality-national.png);">
-            <a href="https://dsl.richmond.edu/panorama/redlining/#loc=5/37.8/-97.9" class="source">source</a>
+        <div class="slide" style="background-image: url(img/Census\ API\ user\ guide.png);">
+            <h2>User Guide & Documentation:</h2>
+            <a class="source" href="https://www.census.gov/content/dam/Census/data/developers/api-user-guide/api-guide.pdf">source</a>
         </div>
 
-        <div class="slide">
-            <h2>Georeferencing takes an image and gives it map coordinates</h2>
+        <div class="slide" style="background-image: url(img/portal.jpeg);">
+            <a class="source" href="https://depositphotos.com/photos/portal.html">source</a>
         </div>
 
-        <div class="slide">
-            <h2>the image could be a map, picture, or anything else you might want to overlay on a map</h2>
+        <div class="slide" style="background-image: url(img/portal.jpeg);">
+            <h2>Think of an API as a portal that can send and receive information....</h2>
+            <a class="source" href="https://depositphotos.com/photos/portal.html">source</a>
         </div>
 
-        <div class="slide">
-            <h2>try to remember the difference between <em>geocoding</em> and <em>georeferencing</em></h2>
+        <div class="slide" style="background-image: url(img/plumbing.webp);">
+            <a class="source" href="https://www.architecturaldigest.com/story/plumbing-problems">source</a>
         </div>
 
-        <div class="slide" style="background-image: url(img/nypl_map_warper.png);">
-            <a class="source" href="http://maps.nypl.org/warper/">maps.nypl.org/warper</a>
-        </div>
-
-        <!-- <div class="slide" style="background-image: url(img/nypl-building-inspector.png);">
-            <a class="source" href="http://buildinginspector.nypl.org/">NYPL Building Inspector</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/nypl-building-inspector.gif);">
-            <a class="source" href="http://buildinginspector.nypl.org/">NYPL Building Inspector</a>
-        </div> -->
-
-        <div class="slide" style="background-image: url(img/usgs-topoview.png);">
-            <a class="source" href="https://ngmdb.usgs.gov/topoview/viewer/">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/public_lab_archive.png);">
-            <a class="source" href="http://publiclab.org/archive">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/public-lab-kite.jpg);">
-            <a class="source" href="http://publiclab.org/wiki/gulf-coast">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/public_lab_gowanus.png);">
-            <a class="source" href="http://publiclab.org/map/gowanus-canal-brooklyn-new-york/2011-01-22">source</a>
-        </div>
-
-        <div class="slide">
-            <h2>Georeferencing with QGIS</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/qgis-gcp-0.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/qgis-gcp-1.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/georectifiying_types.png);">
-            <a class="source" href="http://www.tankonyvtar.hu/hu/tartalom/tamop425/0032_terinformatika/ch02.html">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/georectified_boston_transit.jpg);">
-            <a class="source" href="http://benschmidt.org/dighist13/?p=283">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/qgis-georeferencing-0.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/qgis-georeferencing-1.png);">
+        <div class="slide" style="background-image: url(img/plumbing.webp);">
+            <h2>.... or like plumbing connecting different parts of the internet together</h2>
+            <a class="source" href="https://www.architecturaldigest.com/story/plumbing-problems">source</a>
         </div>
 
         <div class="slide">
-            <h2>find landmarks easily discerned in both your image and the reference map</h2>
+            <h2>to pull data, we will need to build a "query"</h2>
         </div>
 
         <div class="slide">
-            <h2>try to just pin down the corners of the image onto the map&mdash;start with 4 points</h2>
+            <h2>first, you need to decide what dataset you want to pull from</h2>
         </div>
 
         <div class="slide">
-            <h2><a href="inclass-georeferencing.html" target="_blank">in-class exercise</a></h2>
+            <h2>let's use the US 2020 Decennial Census</h2>
         </div>
 
+        <div class="slide" style="background-image: url(img/US2020Census.png);">
+            <a class="source" href="https://www.census.gov/data/developers/data-sets/decennial-census.html">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>then you'll want to decide what variables you are interested in</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/Censusvariables.png);">
+            <a class="source" href="https://www.census.gov/data/developers/data-sets/decennial-census.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/Censusvariables2.png);">
+            <a class="source" href="https://api.census.gov/data/2020/dec/dp/variables.html">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>finally, you'll want to decide which geographic level you want to look at: <em>states? counties? census tracts?</em></h2>
+        </div>
+
+        <div class="slide">
+            <h2>let's break down the elements of a query</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/CensusAPI-request_01.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/CensusAPI-request_02.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/CensusAPI-request_03.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/CensusAPI-request_04.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/CensusAPI-request_05.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/PopulationbyState.png);">
+            <h2>tadaaaa!</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/JSONtoCSV.png);">
+            <h2>Use a JSON to CSV converter to download your data as a spreadsheet</h2>
+        </div>
+
+        <div class="slide">
+            <h2>an <em>asterix * </em> - also known as "wildcard" means <em>"select all"</em> </h2>
+        </div>
+
+        <div class="slide">
+            <h2>use <em>&for</em> and <em>&in</em> to specific geographic levels - the user guide is helpful here!</h2>
+        </div>
+
+        <div class="slide">
+            <h2><em>&for=state:* </em> means "select data for all states"</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/Two-digit\ state\ code\ listing.png);">
+        </div>
+
+        <div class="slide">
+            <h2><em>&for=tract:*&in=state:36</em> means "select data for all census tracts in New York State"</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/CensusAPI-request_06.png);">
+        </div>
+
+
+
+
+        <div class="slide">
+            <h2><a href="inclass-census.html" target="_blank">in-class exercise</a></h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>spatial joins</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/graft-potato-tomato.jpg);">
+            <a class="source" href="http://motherboard.vice.com/read/why-does-the-tomato-potato-plant-exist">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>spatial joins</h2>
+            <p>when you have layers that both have geographic features</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-join-by-location.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-join-by-location-output.png);">
+        </div>
+
+        <div class="slide">
+            <p>Works best when you have:</p>
+            <ul style="list-style: disc; padding-left: 50px;">
+                <li>polygons that don't overlap (such as school districts or census tracts) and</li>
+                <li>points, lines, or smaller polygons that fall within them</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass-spatial-join.html" target="_blank">in-class exercise</a></h2>
+        </div>
+
+        <div class="slide">
+            <h2>geocoding</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geocoding-data.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/geocoding-data.png);">
+            <h2>"I have this spreadsheet I want to map..."</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geocoding-data.png);">
+            <h2>"...it has addresses but doesn't have coordinates"</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/google-newyork.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/google-unionsquare.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/pelias.gif);">
+            <a class="source" href="http://mapzen.com/pelias">pelias</a>
+        </div>
+
+        <div class="slide">
+            <h2>geocoding is a business</h2>
+        </div>
+
+        <div class="slide">
+            <h2>Google's geocoding terms:</h2>
+            <p>up to 2,500 geocoding requests per day</p>
+        </div>
+
+        <div class="slide">
+            <h2>Google's geocoding terms:</h2>
+            <p>If you're using it online, "The Geocoding API may only be used in conjunction with a Google map..."</p>
+            <p><a class="source" href="https://developers.google.com/maps/documentation/geocoding/#Limits">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_geocoder.png);">
+            <a class="source" href="http://geocoding.geo.census.gov/geocoder/locations/addressbatch?form">Census geocoder</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/gpsvisualizer.png);">
+            <a class="source" href="http://www.gpsvisualizer.com/geocoder/">GPS visualizer</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tam-geocoder.png);">
+            <a class="source" href="https://geoservices.tamu.edu/">Texas A&amp;M Geoservices</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geocod-io.png);">
+            <a class="source" href="https://www.geocod.io/">geocod.io</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geocod-io.png);">
+            <h2>(my current preference)</h2>
+            <a class="source" href="https://www.geocod.io/">geocod.io</a>
+        </div>
+
+        <div class="slide">
+            <h2>watch out for the "null island" effect</h2>
+        </div>
+
+        <div class="slide">
+            <h2>sometimes if geocoders really have no clue, they give 0,0</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/null-island.png);">
+            <a class="source" href="https://blogs.loc.gov/maps/2016/04/the-geographical-oddity-of-null-island/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/kidnappings.png);">
+            <a class="source" href="http://fivethirtyeight.com/datalab/mapping-kidnappings-in-nigeria/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/kidnappings.png);">
+            <h2>if geocoders can't find a location, they sometimes default to the middle or capital of the country/state</h2>
+            <a class="source" href="http://fivethirtyeight.com/datalab/mapping-kidnappings-in-nigeria/">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>also, since most geocoders have limits you often need to break up your data into smaller files</h2>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass-geocoding.html" target="_blank">in-class exercise</a></h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geocoding.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/geocoding.png);">
+            <h2>what about going from a point &rarr; name of location?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/twitter-reverse-geocoding.png);">
+            <a class="source" href="https://twitter.com/Sonali_Kohli/status/1175113614249693184">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/instagram-reverse-geocoding.jpg);">
+            <a class="source" href="https://havecamerawilltravel.com/photographer/instagram-location-search/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/flickr_reverse_geocoding.png);">
+        </div>
+
+        <div class="slide">
+            <p>"Never mind so-called disputed places (Kashmir, the West Bank, Cyprus, etc.) all neighbourhoods are 'disputed' around the edges..."</p>
+        </div>
+
+        <div class="slide">
+            <p>"... Our experience has been that there are few better ways to pick a fight than to tell someone what neighbourhood they are in (and being wrong)."</p>
+            <p>
+                <a href="http://lists.w3.org/Archives/Public/public-geolocation/2008Jun/0059.html">Aaron Straup Cope</a>
+            </p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/cope-post-alpha.jpg);">
+            <a class="source" href="http://www.flickr.com/photos/straup/2884390995/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/cope-texas-alpha.png);">
+            <a class="source" href="http://www.flickr.com/photos/straup/2971287541/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/alpha_neighborhoods.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyt-google-maps-neighborhood.png);">
+            <a class="source" href="https://www.nytimes.com/2018/08/02/technology/google-maps-neighborhood-names.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyt-google-maps-neighborhood-3.png);">
+            <a class="source" href="https://www.nytimes.com/2018/08/02/technology/google-maps-neighborhood-names.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyt-google-maps-neighborhood-2.png);">
+            <a class="source" href="https://www.nytimes.com/2018/08/02/technology/google-maps-neighborhood-names.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fruit-belt.png);">
+            <a class="source" href="https://buffalonews.com/2019/03/17/fruit-belt-fights-for-its-name-over-fears-big-tech-is-erasing-it/">source</a>
+        </div>
 
     </body>
 </html>
