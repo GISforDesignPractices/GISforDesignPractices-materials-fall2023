@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Class 6 | Methods 3</title>
+        <title>Class 6 | GIS for Design Practices</title>
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
@@ -16,14 +16,14 @@
     <body>
 
         <div class="slide">
-            <p>Welcome to Methods 3, Lecture 6</p>
+            <p>Welcome to GIS for Design Practices, Lecture 6</p>
             <p>This is a web page that can be viewed as slides.</p>
             <p>→ to move forward</p>
             <p>← to go back</p>
         </div>
 
         <div class="slide">
-            <h1>Methods 3</h1>
+            <h1>GIS for Design Practices</h1>
         </div>
 
         <div class="slide" style="background-image: url(img/assignment-maude.png);">
@@ -261,6 +261,17 @@
             <a class="source" href="https://data.census.gov/cedsci/">data.census.gov</a>
         </div>
 
+        <div class="slide" style="background-image: url(img/CensusAPI.png);">
+            <a class="source" href="https://www.census.gov/data/developers/data-sets.html/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/CensusAPI.png);">
+            <h2>instead, let's learn how to use the <em>Census API!</em></h2>
+            <a class="source" href="https://www.census.gov/data/developers/data-sets.html/">source</a>
+        </div>
+
+        <!---
+
         <div class="slide" style="background-image: url(img/nhgis-0.png);">
         </div>
 
@@ -284,6 +295,156 @@
 
         <div class="slide" style="background-image: url(img/nhgis-7.png);">
         </div>
+
+        -->
+
+        <div class="slide" style="background-image: url(img/);">
+            <h2>Benefits of the Census API:</h2>
+            
+        </div>
+
+        <div class="slide" style="background-image: url(img/);">
+            <h2>Benefits of the Census API:</h2>
+            <ul style="list-style: disc; padding-left: 50px;">
+                <li>let's you pull targeted data</li>
+                
+            </ul>
+        </div>
+
+        <div class="slide" style="background-image: url(img/);">
+            <h2>Benefits of the Census API:</h2>
+            <ul style="list-style: disc; padding-left: 50px;">
+                <li>let's you pull targeted data</li>
+                <li>helps avoid giant, unworkable tables</li>
+              
+            </ul>
+        </div>
+
+        <div class="slide" style="background-image: url(img/);">
+            <h2>Benefits of the Census API:</h2>
+            <ul style="list-style: disc; padding-left: 50px;">
+                <li>let's you pull targeted data</li>
+                <li>helps avoid giant, unworkable tables</li>
+                <li>data can be updated in a breeze</li>
+            </ul>
+        </div>
+
+        <div class="slide" style="background-image: url(img/);">
+            <h2>Benefits of the Census API:</h2>
+            <ul style="list-style: disc; padding-left: 50px;">
+                <li>let's you pull targeted data</li>
+                <li>helps avoid giant, unworkable tables</li>
+                <li>data can be updated in a breeze</li>
+                <li>helpful user guide, tutorials, documentation</li>
+            </ul>
+        </div>
+
+        <div class="slide" style="background-image: url(img/Census\ API\ user\ guide.png);">
+            <h2>User Guide & Documentation:</h2>
+            <a class="source" href="https://www.census.gov/content/dam/Census/data/developers/api-user-guide/api-guide.pdf">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/portal.jpeg);">
+            <a class="source" href="https://depositphotos.com/photos/portal.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/portal.jpeg);">
+            <h2>Think of an API as a portal that can send and receive information....</h2>
+            <a class="source" href="https://depositphotos.com/photos/portal.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/plumbing.webp);">
+            <a class="source" href="https://www.architecturaldigest.com/story/plumbing-problems">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/plumbing.webp);">
+            <h2>.... or like plumbing connecting different parts of the internet together</h2>
+            <a class="source" href="https://www.architecturaldigest.com/story/plumbing-problems">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>to pull data, we will need to build a "query"</h2>
+        </div>
+
+        <div class="slide">
+            <h2>first, you need to decide what dataset you want to pull from</h2>
+        </div>
+
+        <div class="slide">
+            <h2>let's use the US 2020 Decennial Census</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/US2020Census.png);">
+            <a class="source" href="https://www.census.gov/data/developers/data-sets/decennial-census.html">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>then you'll want to decide what variables you are interested in</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/Censusvariables.png);">
+            <a class="source" href="https://www.census.gov/data/developers/data-sets/decennial-census.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/Censusvariables2.png);">
+            <a class="source" href="https://api.census.gov/data/2020/dec/dp/variables.html">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>finally, you'll want to decide which geographic level you want to look at: <em>states? counties? census tracts?</em></h2>
+        </div>
+
+        <div class="slide">
+            <h2>let's break down the elements of a query</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/CensusAPI-request_01.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/CensusAPI-request_02.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/CensusAPI-request_03.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/CensusAPI-request_04.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/CensusAPI-request_05.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/PopulationbyState.png);">
+            <h2>tadaaaa!</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/JSONtoCSV.png);">
+            <h2>Use a JSON to CSV converter to download your data as a spreadsheet</h2>
+        </div>
+
+        <div class="slide">
+            <h2>an <em>asterix * </em> - also known as "wildcard" means <em>"select all"</em> </h2>
+        </div>
+
+        <div class="slide">
+            <h2>use <em>&for</em> and <em>&in</em> to specific geographic levels - the user guide is helpful here!</h2>
+        </div>
+
+        <div class="slide">
+            <h2><em>&for=state:* </em> means "select data for all states"</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/Two-digit\ state\ code\ listing.png);">
+        </div>
+
+        <div class="slide">
+            <h2><em>&for=tract:*&in=state:36</em> means "select data for all census tracts in New York State"</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/CensusAPI-request_06.png);">
+        </div>
+
+
+
 
         <div class="slide">
             <h2><a href="inclass-census.html" target="_blank">in-class exercise</a></h2>
