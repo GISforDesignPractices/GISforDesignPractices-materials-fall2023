@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>In-class Exercises | GIS for Design Practices </title>
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya Sans' rel='stylesheet' type='text/css'>
+        <link href="../css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="../css/inclass.css" rel="stylesheet" />
+    </head>
+    <body>
+        <main>
+            <header>
+                <a href="..">&larr; GIS for Design Practices</a>
+                <h1>In-class Exercises</h1>
+            </header>
+
+            <section>
+                <h2>Join census data to calculate covid rates</h2>
+                <ol>
+                    <li> Visit the U.S. Bureau <a href="https://www.census.gov/data/developers/data-sets/decennial-census.html">Census API page for the Decennial Census.</a> For a description of data products included in the 2020 Decennial Census, you can visit <a href="https://www.census.gov/programs-surveys/decennial-census/decade/2020/planning-management/release/about-2020-data-products.html#dp">this page.</a> </li>
+                    <li> Scroll down to <strong>"2020"</strong> and look at the section called <strong>"Demographic Profile</strong>." Click on the "2020 DP API Variables" <a href="https://api.census.gov/data/2020/dec/dp/variables.html">link</a> to explore available variables. </li>
+                    <li> Here are the variables we are going to pull for this request: </li>
+                        <ol>
+                            <li> <strong>DP1_0001C</strong>: Count of Total Population </li>
+                            <li> <strong>NAME</strong>: The name associated with each geographic entity in the file </li>
+                        </ol>
+                    <li> Now we are going to build our query, step by step: </li>
+                        <ol>
+                            <li> Start your URL with the <strong>host</strong> and the <strong>dataset</strong>: api.census.gov/data/2020/dec/dp</li>
+                            <li> Then add the <strong>get function</strong>: api.census.gov/data/2020/dec/dp?get= </li>
+                            <li> Then add the <strong>variables</strong>, separated by commas: api.census.gov/data/2020/dec/dp?get=NAME,DP1_0001C</li>
+                            <li> Then add the geography using <strong>"&for"</strong>. In this case, we want all fifty states, so we will use an <strong>asterix * </strong>to indicate that: api.census.gov/data/2020/dec/dp?get=NAME,DP1_0001C&for=state:*</li>
+                            <li> Hit enter - you should see your data appear!</li>
+                        </ol>
+                    <li>Copy your data and paste it into a <a href="https://www.convertcsv.com/json-to-csv.htm">JSON to CSV converter</a>. Download the data onto your desktop, save as a CSV file.</li>
+                    <li> Open the file in Excel or Google Sheets and delete the first row. Save as CSV called <strong>"state-population"</strong>.</li>
+                    <li> We are now going to join our population data with our COVID rates data in QGIS.</li>
+                        <ol>
+                            <li> Drag your <strong>"state-population"</strong> CSV into your layers panel in QGIS.</li>
+                            <li> Join the census spreadsheet to the state shapefile with COVID data already joined. </li>
+                        </ol>
+                    <li>Calculate a new field of Covid cases or deaths per 100,000 people.</li>
+                    <li>Make a choropleth showing your new Covid statistic.</li>
+
+        
+
+    
+
+
+                     <!---
+                    <li>This part is optional. If you want to follow along with downloading data from NHGIS:
+                        <ol>
+                            <li>Go to <a href="https://data2.nhgis.org/">NHGIS</a> and create a login if you don't have one.</li>
+                            <li>Click <strong>Geographic Levels</strong> and the <strong>+</strong> under <strong>State</strong>, then submit.</li>
+                            <li>Click <strong>Years</strong> and check <strong>2020</strong> under <strong>Decennial Years</strong>, then submit.</li>
+                            <li>Click <strong>Topics</strong> and click the <strong>+</strong> next to <strong>Total Population</strong>, then submit.</li>
+                            <li>Click the <strong>+</strong> next to <strong>Race</strong> next to <strong>Total Population</strong>.</li>
+                            <li>Click the <strong>Continue</strong> button in the top right under <strong>Data Cart</strong>.</li>
+                            <li>Again, click the <strong>Continue</strong> button in the top right under <strong>Data Cart</strong>.</li>
+                            <li>Now you should see <strong>Review and Submit</strong>. Click <strong>Submit</strong>.</li>
+                            <li>You should see a table of extracts you have downloaded including the status of your current one. Once it is complete, click the <strong>Tables</strong> button under the <strong>Download Data</strong> column.</li>
+                            <li>I recommend opening the CSV in Excel and saving as an Excel file to avoid issues with ID fields.</li>
+                        </ol>
+                    </li>
+                    <li>In QGIS, reopen the data from the last in-class exercise if you closed it.</li>
+                    <li>In QGIS, open the data downloaded with NHGIS. If you weren't able to follow along, use the data in the folder called <strong>nhgis-total-population-2020</strong>.</li>
+                    <li>Join the census spreadsheet to the state shapefile with Covid data already joined.</li>
+                    <li>Calculate a new field of Covid cases or deaths per 100,000 people.</li>
+                    <li>Make a choropleth showing your new Covid statistic.</li>
+
+                    -->
+                </ol>
+            </section>
+
+            <footer>
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Methods 3</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ebrelsford.github.io/" property="cc:attributionName" rel="cc:attributionURL">Eric Brelsford</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </footer>
+        </main>
+    </body>
+</html>
