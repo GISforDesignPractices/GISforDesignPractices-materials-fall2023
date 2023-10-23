@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class 8 | GIS for Design Practices</title>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya+Sans' rel='stylesheet' type='text/css'>
+
+        <link href="../css/pig.css" rel="stylesheet" type="text/css" />
+        <link href="../css/base.css" rel="stylesheet" />
+
+        <script src="../js/hammer.min.js"></script>
+        <script src="../js/pig.js"></script>
+    </head>
+    <body>
+
+        <div class="slide">
+            <p>Welcome to GIS for Design Practices, Lecture 8</p>
+            <p>This is a web page that can be viewed as slides.</p>
+            <p>→ to move forward</p>
+            <p>← to go back</p>
+        </div>
+
+        <div class="slide">
+            <h1>GIS for Design Practices</h1>
+        </div>
+
+        <div class="slide">
+            <h2>What is a webmap?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/gothamist-airbnb.png);">
+            <a class="source" href="https://gothamist.com/news/airbnb-reshaped-these-bed-stuy-blocks-what-happens-when-its-gone">gothamist</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/lat-fire-map.png);">
+            <a class="source" href="https://www.latimes.com/wildfires-map/?fire=fire-creek">la times</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/health-atlas.png);">
+            <a class="source" href="https://healthatlas.ucsf.edu/">UCSF health atlas</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/river-runner.png);">
+            <a class="source" href="https://river-runner.samlearner.com/">river runner</a>
+        </div>
+
+        <div class="slide">
+            <h2>Where did webmaps from from?</h2>
+        </div>
+
+        <div class="slide">
+            <h2>first web maps were static</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapquest.png);">
+            <a class="source" href="http://web.archive.org/web/19971211230909/http://www.mapquest.com/">
+                Mapquest (~1996) via the Wayback Machine
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapquest_map.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapquest_map.jpg);">
+            <h2>click</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapquest_map.jpg);">
+            <h2>click</h2>
+            <h2>...wait</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapquest_map.jpg);">
+            <h2>click</h2>
+            <h2>...wait</h2>
+            <h2>entire page reloads, map is panned east</h2>
+        </div>
+
+        <div class="slide">
+            <h2>static online maps are often indistinguishable from paper maps</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fcwa.jpg);">
+            <a class="source" href="http://foodchainworkers.org/?page_id=2443">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mother-jones-crops.gif);">
+            <a class="source" href="http://www.motherjones.com/environment/2014/02/wheres-californias-water-going">Mother Jones</a>
+        </div>
+
+        <div class="slide">
+            <h2>how did we get here?</h2>
+        </div>
+
+        <div class="slide">
+            <h2>GPS</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/gps_recievers.jpg);">
+            <a class="source" href="http://en.wikipedia.org/wiki/GPS_navigation_device">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/gps_satellites_reading.png);">
+            <a class="source" href="http://en.wikipedia.org/wiki/Dilution_of_precision_(GPS)">
+                source
+            </a>
+        </div>
+
+        <div class="slide">
+            <h2>the end of Selective Availability (2000)</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/gps-sa-noaa.png);">
+            <a class="source" href="http://www.gps.gov/systems/gps/modernization/sa/data/">gps.gov</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/gps-sa-schlaggo.gif);">
+            <a class="source" href="http://www.schlaggo.de/gps/">schlaggo.de</a>
+        </div>
+
+        <div class="slide">
+            <h2>opening up GPS made way for more people to collect accurate location data</h2>
+        </div>
+
+        <div class="slide">
+            <h2>opening up GPS also made location-driven apps on smart phones feasible</h2>
+        </div>
+
+        <div class="slide">
+            <h2>AJAX (2005)</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/ajax_grounded.gif);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/search.gif);">
+        </div>
+
+        <div class="slide">
+            <h2>AJAX</h2>
+            <p>(Asynchronous Javascript and XML)</p>
+        </div>
+
+        <div class="slide">
+            <h2>AJAX</h2>
+            <p style="text-decoration: line-through;">(Asynchronous Javascript and XML)</p>
+            <p>dynamically loading portions of webpages</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/google-maps.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/google-maps.png);">
+            <h2>google maps (2005)</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles-loading.gif);">
+            <a class="source" href="https://maptime.io/anatomy-of-a-web-map/">anatomy of a webmap (maptime)</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles-loading.gif);">
+            <h2>the big breakthrough with google maps was loading maps one tile at a time</h2>
+            <a class="source" href="https://maptime.io/anatomy-of-a-web-map/">anatomy of a webmap (maptime)</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles-loading.gif);">
+            <h2>fundamentally web maps still work this way</h2>
+            <a class="source" href="https://maptime.io/anatomy-of-a-web-map/">anatomy of a webmap (maptime)</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/brief-history.png);">
+            <a class="source" href="https://forrest.nyc/a-brief-history-of-web-maps/">a brief history of web maps</a>
+        </div>
+
+        <div class="slide">
+            <h2>How do you make a webmap?</h2>
+        </div>
+
+        <div class="slide">
+            <h2>Anatomy of a web map</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/web-map-anatomy-0.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/web-map-anatomy-1.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/web-map-anatomy-2.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/web-map-anatomy-3.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/web-map-anatomy-4.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/leaflet.png);">
+            <a class="source" href="https://leafletjs.com/">Leaflet</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/leaflet.png);">
+            <h2>Leaflet is great but requires programming skills</h2>
+            <a class="source" href="https://leafletjs.com/">Leaflet</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox.png);">
+            <a class="source" href="https://mapbox.com/">Mapbox</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox.png);">
+            <h2>same for Mapbox, you need programming skills to do interesting things with it</h2>
+            <a class="source" href="https://mapbox.com/">Mapbox</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/storymap.png);">
+            <a class="source" href="https://storymap.knightlab.com/">StoryMap</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/storymap.png);">
+            <h2>StoryMap is good for specific uses</h2>
+            <a class="source" href="https://storymap.knightlab.com/">StoryMap</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/google-my-maps-example.png);">
+            <a class="source" href="https://www.google.com/maps/d/u/0/">Google My Maps</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/umap.png);">
+            <a class="source" href="https://umap.openstreetmap.fr/en/">uMap</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/umap-example.png);">
+            <a class="source" href="https://umap.openstreetmap.fr/en/map/franklin-county-nc-usa-redistricting_655416#11/36.0383/-78.3092">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/foursquare-studio.png);">
+            <a class="source" href="https://location.foursquare.com/products/studio/">Foursquare Studio</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto.png);">
+            <a class="source" href="https://carto.com/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/readings-risk.png);">
+            <a class="source" href="https://covid19risk.biosci.gatech.edu/">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>Felt</h2>
+        </div>
+
+        <div class="slide">
+            <h2>Felt is relatively straightforward but very powerful</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-pricing.png);">
+            <a class="source" href="https://felt.com/pricing">felt.com/pricing</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-pricing-educational.png);">
+            <a class="source" href="https://felt.com/pricing">felt.com/pricing</a>
+        </div>
+
+        <div class="slide">
+            <h2>Who uses Felt?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-westchester.png);">
+            <a class="source" href="https://felt.com/gallery/westchester-land-trust-impact-map">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-zimbabwe.png);">
+            <a class="source" href="https://felt.com/map/Community-Amenities-Hoya-Ward-Muzarabani-District-wYiqSNI2Rviampr7gN0CYB?loc=-16.3876,31.33932,13z">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-gothamist.png);">
+            <a class="source" href="https://gothamist.com/news/is-airbnb-allowed-in-your-building-our-map-shows-which-nyc-addresses-ban-the-rentals">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-hurricane-idalia.png);">
+            <a class="source" href="https://felt.com/map/Hurricane-Idalia-Population-Dynamics-xt4p3OQUT4G8iNp9Apmof9AD?loc=30.019,-81.958,7.98z&share=1">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-berlin-free-spaces.png);">
+            <a class="source" href="https://felt.com/map/Berlin-Free-Spaces-15JOeMpzSeeS0hLRVAoh9AD?loc=52.50407,13.42508,13.22z">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>uploading data</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-upload.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-uploaded.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-shp.png);">
+            <h2>shapefiles <em>must be</em> zipped</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-styling.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-styles.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-categorized.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-categorized.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-graduated.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-graduated.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-attribute-table.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-data.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-print-composer.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-share.png);">
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass-felt.html" target="_blank">in-class exercise</a></h2>
+        </div>
+
+        <div class="slide">
+            <h2>crediting data sources</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-data-sources-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-data-sources-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-data-sources-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-data-sources-3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-data-sources-4.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-data-sources-4.png);">
+            <h2>this is the field that appears in the bottom left of the map</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-change-background.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-change-background.png);">
+            <h2>changing background maps</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-change-background.png);">
+            <h2>we'll talk about customizing these more when we talk about Mapbox</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-library-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-library-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-library-1.png);">
+            <h2>the data library has a number of layers you might find useful</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-library-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-notes.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-circle.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-clip.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-clip-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-clip-1.png);">
+            <h2>"clipping" a feature makes it a separate element you can style as you like</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-route.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-route-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-route-1.png);">
+            <h2>routes can show a reasonable walking or driving route</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-route-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-route-2.png);">
+            <h2>or flying routes if that's useful</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-share-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-share-1.png);">
+            <h2>share an editable version of the map</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-share-1.png);">
+            <h2>could be great for workshops / crowdsourcing</h2>
+        </div>
+
+        <div class="slide">
+            <h2>preparing data for the web</h2>
+        </div>
+
+        <div class="slide">
+            <h2>what if your data takes up too much space?</h2>
+        </div>
+
+        <div class="slide">
+            <h2>or is so large it's taking too long to upload?</h2>
+        </div>
+
+        <div class="slide">
+            <h2>you either have to reduce the <em>number</em> of features or make the features <em>smaller</em></h2>
+        </div>
+
+        <div class="slide">
+            <p>1. clip/filter features if you can</p>
+            <p>2. delete attributes</p>
+            <p>3. simplify lines or polygons</p>
+        </div>
+
+        <div class="slide">
+            <h2>2. delete attributes you don't need</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/delete1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/delete2.png);">
+        </div>
+
+        <div class="slide">
+            <h2>3. simplify lines or polygons: QGIS or mapshaper.org</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapshaper.gif);">
+            <a class="source" href="http://mapshaper.org">source</a>
+        </div>
+
+        <div class="slide">
+            <p>1. clip/filter features if you can</p>
+            <p>2. delete attributes</p>
+            <p>3. simplify lines or polygons</p>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass-felt-2.html" target="_blank">in-class exercise</a></h2>
+        </div>
+
+    </body>
+</html>

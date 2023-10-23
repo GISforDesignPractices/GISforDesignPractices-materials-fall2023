@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class 9 | GIS for Design Practices</title>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya+Sans' rel='stylesheet' type='text/css'>
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+        <link href="../css/pig.css" rel="stylesheet" type="text/css" />
+        <link href="../css/base.css" rel="stylesheet" />
+
+        <script src="../js/hammer.min.js"></script>
+        <script src="../js/pig.js"></script>
+    </head>
+    <body>
+
+        <div class="slide">
+            <p>Welcome to GIS for Design Practices, Lecture 9</p>
+            <p>This is a web page that can be viewed as slides.</p>
+            <p>→ to move forward</p>
+            <p>← to go back</p>
+        </div>
+
+        <div class="slide">
+            <h1>GIS for Design Practices</h1>
+        </div>
+
+        <div class="slide">
+          <h2>Felt has a QGIS plugin</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-plugin.png);">
+            <a href="https://felt.com/blog/qgis-plugin-and-felt-api" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-plugin-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-plugin-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-plugin-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-plugin-3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-plugin-4.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-plugin-5.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-plugin-6.png);">
+        </div>
+
+        <div class="slide">
+            <h2>how is a webmap different from a map made in QGIS?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/zoom.gif);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/pan.gif);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/popup.gif);">
+        </div>
+
+        <div class="slide">
+            <h2>let's talk about making features look different based on the zoom level</h2>
+        </div>
+
+        <div class="slide">
+            <h2>or "zoom-dependent styles"</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-zoom-styles-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-zoom-styles-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-zoom-styles-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-zoom-styles-3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-zoom-styles-3.png);">
+            <h2>maybe make polygons slightly transparent as you zoom in</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-zoom-styles-4.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-zoom-styles-4.png);">
+            <h2>maybe make points larger as you zoom in to make them easier to click</h2>
+        </div>
+
+        <div class="slide">
+          <h2>customizing Felt popups</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-0.png);">
+            <h2>by default Felt shows every attribute in the popup</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-0.png);">
+            <h2>you can override this by editing the code behind the map</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-3.png);">
+            <h2>in <code>datasets</code>, after <code>id</code> add <code>keyAttributes</code> and list the attributes you want</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-4.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-4.png);">
+            <h2>not sure what your attributes are called? click the Data tab to see all the attributes</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-5.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-6.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-popups-6.png);">
+            <h2>you can add <code>attributes</code> to set the display name for your attributes</h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>creating styles in Mapbox</h2>
+            <h2>TODO update interface images</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-go-to-studio.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-landing.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-select-base-style.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-new.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-layers.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-layers.png);">
+            <h2>like most GISs, Mapbox maps are layer-based</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-components.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-components.png);">
+            <h2>layers are grouped into similar feature types, a layer group is called a component</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-component-edit.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-component-edit.png);">
+            <h2>you can change all of the layers in a component simultaneously</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-component-view-layers.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-component-view-layers.png);">
+            <h2>or you can view the layers that make up that component</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-component-layers.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-component-layer-edit.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-component-layer-edit.png);">
+            <h2>layers have a lot more settings than components</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-component-layer-edit.png);">
+            <h2>by default, a layer in a component is locked</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-component-layer-edit.png);">
+            <h2>you can "override" individual settings and change them</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-new.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-new.png);">
+            <h2>not sure which component or layer a feature is on?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-feature-layer.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-feature-layer.png);">
+            <h2>click it!</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-feature-layer-edit.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-feature-layer-edited.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-feature-layer-edited.png);">
+            <h2>want to see exactly which features are in a layer?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-view-layer.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-view-layer.png);">
+            <h2>first, go to the layer</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-view-layer-select.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-view-layer-select.png);">
+            <h2>click Select Data</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-view-layer-xray.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-view-layer-xray.png);">
+            <h2>green features will appear on the map, pink are on the layer but filtered out</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-view-layer-xray-click.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-view-layer-xray-click.png);">
+            <h2>click a feature to see the data behind it</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-view-layer-xray-filters.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-view-layer-xray-filters.png);">
+            <h2>some settings can't be changed without "ejecting" a layer from a component</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-component-eject.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-color.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-zoom-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-zoom-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-field.png);">
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass-mapbox.html" target="_blank">in-class exercise</a></h2>
+        </div>
+
+        <div class="slide">
+            <h2>for the most part, cartographic conventions hold with basemaps</h2>
+        </div>
+
+        <div class="slide">
+            <ul style="list-style: disc; padding-left: 50px;">
+                <li>scale</li>
+                <li>hierarchy</li>
+                <li>color</li>
+                <li>symbology</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>but with basemaps, be aware that <em>zooming</em> and <em>panning</em> change how it will be viewed</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/surging-seas.png);">
+            <a class="source" href="https://ss2.climatecentral.org/#12/40.6211/-73.9170?show=satellite&projections=0-K14_RCP85-SLR&level=9&unit=feet&pois=hide">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/census-hard-to-count.png);">
+            <a class="source" href="http://www.censushardtocountmaps2020.us/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/land-grab-universities.png);">
+            <a class="source" href="https://www.landgrabu.org/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/wapo-renters.png);">
+            <a class="source" href="https://www.washingtonpost.com/news/wonk/wp/2016/05/25/how-much-a-decent-apartment-costs-you-in-every-county/?noredirect=on&utm_term=.32ddb5129c24">source</a>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>using Mapbox tiles in Carto</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-publish.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-share.png);">
+        </div>
+
+        <div class="slide">
+          <h2>you need to create a URL like this:</h2>
+          <pre><code>https://api.mapbox.com/styles/v1
+  /YOUR_USERNAME/YOUR_STYLE_ID
+  /tiles/256/{z}/{x}/{y}
+  ?access_token=YOUR_MAPBOX_ACCESS_TOKEN</code></pre>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-share.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-share.png);">
+          <h2>getting your style id</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-share-1.png);">
+          <h2>it's the part after your username in the URL</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-share-2.png);">
+          <h2>your access key</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-basemap.png);">
+            <h2>TODO Felt instead</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-mapbox-basemap.png);">
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass-mapbox-carto.html" target="_blank">in-class exercise</a></h2>
+        </div>
+
+        <div class="slide">
+            <h2>you can add your own data to Mapbox basemaps</h2>
+        </div>
+
+        <div class="slide">
+            <h2>for example, when you have too much data to put in Carto, and you don't want popups on the data</h2>
+        </div>
+
+        <div class="slide">
+            <h2>I recommend adding data as a <em>tileset</em></h2>
+        </div>
+
+        <div class="slide">
+            <p>1. Upload data (such as a zipped shapefile)</p>
+            <p>2. Add the tileset to your style</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-tileset-link.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-add-tileset.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-upload-tileset.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-add-layer.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-data-add.png);">
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass-mapbox-data.html" target="_blank">in-class exercise</a></h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>dot density maps</h2>
+        </div>
+
+        <div class="slide">
+            <h2>if you want to follow along, try using <a href="data/week12data.zip">this data</a></h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/race-block-nyc.png);">
+            <a class="source" href="http://www.urbanresearchmaps.org/plurality/blockmaps.htm">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/race-block-nyc.png);">
+            <h2>sometimes choropleths flatten data too much</h2>
+            <a class="source" href="http://www.urbanresearchmaps.org/plurality/blockmaps.htm">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/dot-density-atlanta.png);">
+            <a class="source" href="https://www.nytimes.com/interactive/2015/07/08/us/census-race-map.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/dot-density-atlanta.png);">
+            <h2>a good dot density map can show more nuance</h2>
+            <a class="source" href="https://www.nytimes.com/interactive/2015/07/08/us/census-race-map.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/dot-density-education.png);">
+            <a class="source" href="http://personal.tcu.edu/kylewalker/maps/education/colorsafe/#10.52/37.7588/-122.3156">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/dot-density-chicago.png);">
+            <a class="source" href="http://www.radicalcartography.net/index.html?chicagodots">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/dot-density-chicago-income.png);">
+            <a class="source" href="http://www.radicalcartography.net/index.html?chicagodots">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/dot-density-us.png);">
+            <a class="source" href="https://demographics.virginia.edu/DotMap/index.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/dot-density-nyc.png);">
+            <a class="source" href="https://demographics.virginia.edu/DotMap/index.html">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>how?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-dot-density-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-dot-density-0.png);">
+            <h2>you need polygons and a column of numeric data</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-dot-density-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-dot-density-1a.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-dot-density-1a.png);">
+            <h2>tell QGIS how many points to make</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-dot-density-1a.png);">
+            <h2>sometimes this will be the value in the column itself</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-dot-density-1a.png);">
+            <h2>sometimes you will want to do some math (eg divide by 100)</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-dot-density-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-dot-density-2.png);">
+            <h2>keep in mind that you will have a new shapefile with the points you create</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-dot-density-2.png);">
+            <h2>style in a way that works for the scale you're displaying at</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/dots-dasymetric-0.png);">
+            <a class="source" href="http://uxblog.idvsolutions.com/2013/10/dasymetric-dot-density-and-uncanny.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/dots-dasymetric-1.png);">
+            <a class="source" href="http://uxblog.idvsolutions.com/2013/10/dasymetric-dot-density-and-uncanny.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapping-historical-ny.png);">
+            <a class="source" href="https://mappinghny.com/map">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/stamen-dot-density.png);">
+            <a class="source" href="https://stamen.com/mapping-historical-new-york-with-dot-density-maps/">source</a>
+        </div>
+
+
+    </body>
+</html>

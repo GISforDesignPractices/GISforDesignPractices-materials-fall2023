@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>In-class Exercises | Methods 3</title>
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya Sans' rel='stylesheet' type='text/css'>
+        <link href="../css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="../css/inclass.css" rel="stylesheet" />
+    </head>
+    <body>
+        <main>
+            <header>
+                <a href="..">&larr; Methods 3</a>
+                <h1>In-class Exercises</h1>
+            </header>
+
+            <section>
+                <h2>Data clean-up + Felt</h2>
+                <ol>
+                    <li>Download <a href="http://data.insideairbnb.com/united-states/ny/new-york-city/2023-09-05/data/listings.csv.gz">the latest data from Inside Airbnb for NYC</a>. You can view all available data <a href="http://insideairbnb.com/get-the-data">on their site</a>.</li>
+                    <li>Unzip the data.</li>
+                    <li>Open the data in Excel or another spreadsheet application.</li>
+                    <li>Try to get the file size down to around 70 MB by deleting some of the larger fields we do not need.
+                        You'll need to make some judgement calls here but we definitely want:
+                        <ul>
+                            <li>availability_365</li>
+                            <li>id</li>
+                            <li>latitude</li>
+                            <li>listing_url</li>
+                            <li>longitude</li>
+                            <li>price</li>
+                            <li>room_type</li>
+                        </ul>
+                    </li>
+                    <li>Delete columns, save the file, and check the new size. Columns with a lot of text are the best ones to go for to try to get data smaller.</li>
+                    <li>Make the <strong>price</strong> column numeric by using Find and Replace to remove:
+                        <ol>
+                            <li><strong>$</strong></li>
+                            <li><strong>,</strong></li>
+                        </ol>
+                    </li>
+                    <li>Log in to <a href="https://felt.com/">your Felt account</a>.</li>
+                    <li>Create a new map.</li>
+                    <li>Upload the modified CSV file (this will take a minute or two as the file is still likely large).</li>
+                    <li>Change the styles of the points:
+                        <ol>
+                            <li>Style the points by value with the <strong>room_type</strong> column to make a categorized style.</li>
+                            <li>Style the points by value with the <strong>price</strong> column to make a graduated style.</li>
+                        </ol>
+                    </li>
+                    <li>Experiment with some of the features we just talked about:
+                        <ul>
+                            <li>changing background styles</li>
+                            <li>using the library to add more data to the map</li>
+                            <li>using routes and other annotations</li>
+                        </ul>
+                    </li>
+                    <li>Get the public link for the map.</li>
+                </ol>
+            </section>
+
+            <footer>
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Methods 3</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ebrelsford.github.io/" property="cc:attributionName" rel="cc:attributionURL">Eric Brelsford</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </footer>
+        </main>
+    </body>
+</html>
+
