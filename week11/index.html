@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class 11 | GIS for Design Practices</title>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya+Sans' rel='stylesheet' type='text/css'>
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+        <link href="../css/pig.css" rel="stylesheet" type="text/css" />
+        <link href="../css/base.css" rel="stylesheet" />
+
+        <script src="../js/hammer.min.js"></script>
+        <script src="../js/pig.js"></script>
+    </head>
+    <body>
+
+        <div class="slide">
+            <p>Welcome to GIS for Design Practices, Lecture 11</p>
+            <p>This is a web page that can be viewed as slides.</p>
+            <p>→ to move forward</p>
+            <p>← to go back</p>
+        </div>
+
+        <div class="slide">
+            <h1>GIS for Design Practices</h1>
+        </div>
+
+        <div class="slide">
+            <h2>OpenStreetMap</h2>
+            <h2>TODO more flavor, readings</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm.png);">
+            <a class="source" href="https://www.openstreetmap.org/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm.png);">
+            <h2>a free map of the world</h2>
+            <a class="source" href="https://www.openstreetmap.org/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm.png);">
+            <h2>kinda like a giant shapefile of the world</h2>
+            <a class="source" href="https://www.openstreetmap.org/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-lat.png);">
+            <a class="source" href="https://www.latimes.com/projects/homeless-sleeping-maps/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-lat-attribution.png);">
+            <a class="source" href="https://www.latimes.com/projects/homeless-sleeping-maps/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-routing.png);">
+            <a class="source" href="https://www.latimes.com/projects/homeless-sleeping-maps/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/access-map.png);">
+            <a class="source" href="https://www.accessmap.io/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-orientation.png);">
+            <a class="source" href="https://geoffboeing.com/2019/09/urban-street-network-orientation/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-registered-users.png);">
+            <a class="source" href="http://wiki.openstreetmap.org/wiki/Stats">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-db-stats.png);">
+            <a class="source" href="http://wiki.openstreetmap.org/wiki/Stats">
+                source
+            </a>
+        </div>
+
+        <div class="slide">
+            <h2>how do people add to OSM?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-attribute-table.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-tags-union-square.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-tags-bmt-broadway.png);">
+        </div>
+
+        <div class="slide">
+            <p>an attribute table wouldn't work because:</p>
+            <ul style="list-style: disc outside; padding-left: 50px;">
+                <li>there would be thousands of columns</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <p>an attribute table wouldn't work because:</p>
+            <ul style="list-style: disc outside; padding-left: 50px;">
+                <li>there would be thousands of columns</li>
+                <li>and most of those columns would be empty (eg 'electrified')</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <p>an attribute table wouldn't work because:</p>
+            <ul style="list-style: disc outside; padding-left: 50px;">
+                <li>there would be thousands of columns</li>
+                <li>and most of those columns would be empty (eg 'electrified')</li>
+                <li>what you could map would be predetermined</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>tags</h2>
+            <p>key-value pairs</p>
+        </div>
+
+        <div class="slide">
+            <h2>tags</h2>
+            <p>leisure=park</p>
+        </div>
+
+        <div class="slide">
+            <h2>tags</h2>
+            <p>name=Union Square West</p>
+        </div>
+
+        <div class="slide">
+            <h2>tags</h2>
+            <p>we make them up as we go!</p>
+        </div>
+
+        <div class="slide">
+            <h2>folksonomy</h2>
+        </div>
+
+        <div class="slide">
+            <h2>folksonomy</h2>
+            <p>a collaborative system of categorization</p>
+        </div>
+
+        <div class="slide">
+            <h2>you can tag things any way you want</h2>
+        </div>
+
+
+        <div class="slide">
+            <h2>how do you get data out?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nextzen-extracts.png);">
+            <a class="source" href="https://www.nextzen.org/metro-extracts/index.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nextzen-extracts.png);">
+            <h2>if you need a whole city</h2>
+            <a class="source" href="https://www.nextzen.org/metro-extracts/index.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-quickosm-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-quickosm-0.png);">
+            <h2>if you only need a few feature types</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-quickosm-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-quickosm-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-quickosm-1.png);">
+            <h2>not sure what to search for?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm.png);">
+            <h2>go to <a href="https://openstreetmap.org">openstreetmap.org</a></h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm.png);">
+            <h2>find something you would like to get data for</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-query-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-query-0.png);">
+            <h2>right-click on it</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-query-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-query-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-query-3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-query-3.png);">
+            <h2>use the tags you find</h2>
+        </div>
+
+        <div class="slide">
+            <h2>connecting to servers to get data</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/wfs-fao-0.png);">
+            <a class="source" href="https://data.apps.fao.org/map/catalog/srv/eng/catalog.search#/metadata/ac02a460-da52-11dc-9d70-0017f293bd28">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/wfs-fao-1.png);">
+            <a class="source" href="https://data.apps.fao.org/map/catalog/srv/eng/catalog.search#/metadata/ac02a460-da52-11dc-9d70-0017f293bd28">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/wfs-fao-1.png);">
+          <p style="background: white; padding: 1em;">http://www.fao.org/fishery/geoserver/fifao/ows?service=WFS&request=GetFeature&version=1.0.0&typeName=fifao:FAO_AREAS_CWP</p>
+            <a class="source" href="https://data.apps.fao.org/map/catalog/srv/eng/catalog.search#/metadata/ac02a460-da52-11dc-9d70-0017f293bd28">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/wfs-fao-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/wfs-fao-2.png);">
+          <h2>add a new connection with the WFS URL</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/wfs-fao-3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/wfs-fao-3.png);">
+          <h2>connect, select a layer, and add it</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/wfs-fao-4.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/wfs-fao-5.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/wfs-fao-5.png);">
+          <h2>this is a vector file exactly like a shapefile</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/wfs-fao-5.png);">
+          <h2>you can export it to a shapefile if you don't want to rely on the server</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geoseer-0.png);">
+            <a class="source" href="https://www.geoseer.net/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geoseer-0.png);">
+          <h2>this is a search engine for WFS servers</h2>
+            <a class="source" href="https://www.geoseer.net/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geoseer-1.png);">
+            <a class="source" href="https://www.geoseer.net/s.php?q=immigration+australia">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geoseer-1.png);">
+            <h2>look for WFS (web feature service) URLs</h2>
+            <a class="source" href="https://www.geoseer.net/s.php?q=immigration+australia">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geoseer-1.png);">
+            <h2>WMS (web map service) is useful, too, but is only raster</h2>
+            <a class="source" href="https://www.geoseer.net/s.php?q=immigration+australia">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geoseer-2.png);">
+            <a class="source" href="https://www.geoseer.net/rl.php?ql=c1d8f230601b3f44&p=1&q=immigration%20australia#">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/feature-server-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/feature-server-0.png);">
+          <h2>you could also look for Esri FeatureServer URLs</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/feature-server-0.png);">
+          <h2>for what we're doing, FeatureServer = WFS</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/feature-server-1.png);">
+            <a class="source" href="https://egis.fire.ca.gov/arcgis/rest/services/FRAP/FirePerimeters_FS/FeatureServer/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/feature-server-qgis.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/feature-server-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/dcp-mapserver-0.png);">
+            <a class="source" href="https://www.nyc.gov/site/planning/data-maps/open-data.page">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/dcp-mapserver-1.png);">
+            <a class="source" href="https://tiles.arcgis.com/tiles/GfwWNkhOj9bNBqoJ/arcgis/rest/services/GeoreferencedNYCZoningMaps/MapServer">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/dcp-mapserver-1.png);">
+          <h2>MapServer is an Esri server that provides images of maps</h2>
+            <a class="source" href="https://tiles.arcgis.com/tiles/GfwWNkhOj9bNBqoJ/arcgis/rest/services/GeoreferencedNYCZoningMaps/MapServer">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/dcp-mapserver-2.png);"></div>
+        <div class="slide" style="background-image: url(img/dcp-mapserver-3.png);"></div>
+        <div class="slide" style="background-image: url(img/dcp-mapserver-3.png);">
+          <h2>create a new connection</h2>
+        </div>
+        <div class="slide" style="background-image: url(img/dcp-mapserver-4.png);"></div>
+        <div class="slide" style="background-image: url(img/dcp-mapserver-4.png);">
+          <h2>connect, select the layer, and add it</h2>
+        </div>
+        <div class="slide" style="background-image: url(img/dcp-mapserver-5.png);"></div>
+        <div class="slide" style="background-image: url(img/dcp-mapserver-6.png);"></div>
+
+        <div class="slide" style="background-image: url(img/felt-mapserver.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-mapserver.png);">
+            <h2>you can use these in Felt too</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/felt-mapserver-2.png);">
+        </div>
+
+        <div class="slide">
+            <h2>try it out: search for a WFS or FeatureServer URL you could use</h2>
+        </div>
+
+
+        <div class="slide">
+            <h2>TODO mapbox gl js?</h2>
+        </div>
+
+        <div class="slide">
+            <h2>TODO other apis?</h2>
+        </div>
+
+    </body>
+</html>

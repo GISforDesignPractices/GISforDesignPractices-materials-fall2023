@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>In-class Exercises | Methods 3</title>
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya Sans' rel='stylesheet' type='text/css'>
+        <link href="../css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="../css/inclass.css" rel="stylesheet" />
+    </head>
+    <body>
+        <main>
+            <header>
+                <a href="..">&larr; Methods 3</a>
+                <h1>In-class Exercises</h1>
+            </header>
+
+            <section>
+                <h2>Geocoding Example</h2>
+                <ol>
+                    <li>We will geocode an excerpt of the 40,329 <a href="https://data.cityofnewyork.us/Business/License-Applications/ptev-4hud/">applications for a license</a> to sell tobacco in New York City since 1998.</li>
+                    <li>First you need to make sure there is an address column with building number and street in one field.</li>
+                    <li>In Excel, open <strong>license_applications/tobacco_excerpt.csv</strong> and create a street address field from two columns: "Building Number" and "Street". You can use the CONCATENATE function.</li>
+                    <li>Open QGIS and install the <strong>MMQGIS Plugin</strong>.</li>
+                    <li>In the new MMQIS dropdown, select <strong>Geocode &gt; Geocode CSV with Web Service</strong>.</li>
+                    <li>In this dialog:
+                        <ol>
+                            <li>Open the version of <strong>tobacco_excerpt.csv</strong> you created with an address field.</li>
+                            <li>Set <strong>Web Service</strong> = <strong>US Census Bureau</strong></li>
+                            <li>Name your Output File Name and Not Found Output List.</li>
+                            <li>Click Apply</li>
+                        </ol>
+                    </li>
+                    <li>Add a baselayer using QuickMapServices to see where the geocoded points are</li>
+                    <li>Open the Not Found Output List to see if any stores were not successfully geocoded.</li>
+                    <li>If you can determine the error in the address of the ungeocoded addresses, you may want to correct the addresses and geocode again.</li>
+                </ol>
+            </section>
+
+            <footer>
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Methods 3</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ebrelsford.github.io/" property="cc:attributionName" rel="cc:attributionURL">Eric Brelsford</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </footer>
+        </main>
+    </body>
+</html>

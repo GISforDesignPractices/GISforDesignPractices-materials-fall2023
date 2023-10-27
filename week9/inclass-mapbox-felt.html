@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>In-class Exercises | Methods 3</title>
+        <link href='http://fonts.googleapis.com/css?family=Arvo|Alegreya Sans' rel='stylesheet' type='text/css'>
+        <link href="../css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="../css/inclass.css" rel="stylesheet" />
+    </head>
+    <body>
+        <main>
+            <header>
+                <a href="..">&larr; Methods 3</a>
+                <h1>In-class Exercises</h1>
+            </header>
+
+            <section>
+                <h2>Add a Mapbox style to Carto</h2>
+                <ol>
+                    <li>Publish your style from the previous part.</li>
+                    <li>Find the Carto URL
+                        <ol>
+                            <li>Start with this template:
+                                <pre><code>https://api.mapbox.com/styles/v1
+  /YOUR_USERNAME/YOUR_STYLE_ID
+  /tiles/256/{z}/{x}/{y}
+  ?access_token=YOUR_MAPBOX_ACCESS_TOKEN</code></pre>
+                            </li>
+                            <li>Replace <code>YOUR_USERNAME</code> with your Mapbox username.</li>
+                            <li>Replace <code>YOUR_STYLE_ID</code> with your Mapbox style id. When you're looking at your style in Mapbox studio the URL is like this: <pre><code>https://studio.mapbox.com/styles/YOUR_USERNAME/YOUR_STYLE_ID/edit/#14.4/40.71989/-73.98799</code></pre></li>
+                            <li>Replace <code>YOUR_MAPBOX_ACCESS_TOKEN</code> with your Mapbox access token. This is in the Share window in Mapbox Studio.</li>
+                        </ol>
+                    </li>
+                    <li>Open a Carto map.</li>
+                    <li>Click on the basemap to change it, select <strong>Mapbox</strong> for the source, and enter the URL you created above.</li>
+                </ol>
+            </section>
+
+            <footer>
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Methods 3</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ebrelsford.github.io/" property="cc:attributionName" rel="cc:attributionURL">Eric Brelsford</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </footer>
+        </main>
+    </body>
+</html>
