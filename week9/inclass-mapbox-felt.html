@@ -13,24 +13,18 @@
             </header>
 
             <section>
-                <h2>Add a Mapbox style to Carto</h2>
+                <h2>Add a Mapbox style to Felt</h2>
                 <ol>
                     <li>Publish your style from the previous part.</li>
-                    <li>Find the Carto URL
+                    <li>Find the style's URL:
                         <ol>
-                            <li>Start with this template:
-                                <pre><code>https://api.mapbox.com/styles/v1
-  /YOUR_USERNAME/YOUR_STYLE_ID
-  /tiles/256/{z}/{x}/{y}
-  ?access_token=YOUR_MAPBOX_ACCESS_TOKEN</code></pre>
-                            </li>
-                            <li>Replace <code>YOUR_USERNAME</code> with your Mapbox username.</li>
-                            <li>Replace <code>YOUR_STYLE_ID</code> with your Mapbox style id. When you're looking at your style in Mapbox studio the URL is like this: <pre><code>https://studio.mapbox.com/styles/YOUR_USERNAME/YOUR_STYLE_ID/edit/#14.4/40.71989/-73.98799</code></pre></li>
-                            <li>Replace <code>YOUR_MAPBOX_ACCESS_TOKEN</code> with your Mapbox access token. This is in the Share window in Mapbox Studio.</li>
+                            <li>Go to <strong>Share</strong></li>
+                            <li>Under <strong>Developer Resources</strong> select <strong>Third Party &gt; Carto</strong>.</li>
+                            <li>Copy the <strong>Integration URL</strong>.</li>
                         </ol>
                     </li>
-                    <li>Open a Carto map.</li>
-                    <li>Click on the basemap to change it, select <strong>Mapbox</strong> for the source, and enter the URL you created above.</li>
+                    <li>Open a Felt map.</li>
+                    <li>Click on the basemap selector to change it, select <strong>From URL</strong> and enter the URL you created above in the <strong>Tile URL</strong> field.</li>
                 </ol>
             </section>
 
